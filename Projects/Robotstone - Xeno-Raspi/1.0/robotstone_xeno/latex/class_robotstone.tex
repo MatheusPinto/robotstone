@@ -1,0 +1,277 @@
+\hypertarget{class_robotstone}{}\doxysection{Robotstone Class Reference}
+\label{class_robotstone}\index{Robotstone@{Robotstone}}
+Inheritance diagram for Robotstone\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_robotstone}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_robotstone_a319c5fcc1f0f3a2800cc39e17ff8a7e3}\label{class_robotstone_a319c5fcc1f0f3a2800cc39e17ff8a7e3}} 
+\mbox{\hyperlink{class_robotstone_a319c5fcc1f0f3a2800cc39e17ff8a7e3}{Robotstone}} (void)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_robotstone}{Robotstone}} high level class constructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_robotstone_a4bf971c1e7c690b6459c1fbf4e22f97f}{Handshake\+Send}} (uint16\+\_\+t $\ast$message)
+\begin{DoxyCompactList}\small\item\em Send a message to the receiver, by means of a handshake. The sender will firstly send a handshake message to initiate the transaction. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_robotstone_a97119321d0e04911bb29591508a00e3f}{Handshake\+Receive}} (uint16\+\_\+t $\ast$message)
+\begin{DoxyCompactList}\small\item\em Receive a message from the sender, by means of a handshake. The receiver will wait for a handshake message by the sender to initiate the transaction. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_robotstone_a0c9ffecccf5a86e180107db5411ff3ba}\label{class_robotstone_a0c9ffecccf5a86e180107db5411ff3ba}} 
+void \mbox{\hyperlink{class_robotstone_a0c9ffecccf5a86e180107db5411ff3ba}{Calcule\+Raw\+Speed}} (void)
+\begin{DoxyCompactList}\small\item\em Calculate the the processor raw speed in K\+W\+I\+PS and saves in internal \mbox{\hyperlink{class_robotstone}{Robotstone}} attributes. \end{DoxyCompactList}\item 
+uint64\+\_\+t \mbox{\hyperlink{class_robotstone_a15aa293171c2d46b7ecc2940c3602f20}{Get\+Raw\+Speed}} (void)
+\begin{DoxyCompactList}\small\item\em Get the processor raw speed in K\+W\+I\+PS. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_robotstone_af07c0297ddb1c331fb184b42150d0cc8}{Get\+Worst\+Case}} (size\+\_\+t test)
+\begin{DoxyCompactList}\small\item\em Save the worst case scenario in the experiment. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_robotstone_a1053af0b6c5ec614ad685c04dbd6dcc8}\label{class_robotstone_a1053af0b6c5ec614ad685c04dbd6dcc8}} 
+\mbox{\hyperlink{structworst_case_scenario__t}{worst\+Case\+Scenario\+\_\+t}} {\bfseries worst\+Scenario}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_robotstone_a1206a50023958c32df426747774909c4}\label{class_robotstone_a1206a50023958c32df426747774909c4}} 
+static const uint16\+\_\+t {\bfseries handshake\+Msg\+Step1} = 666
+\item 
+\mbox{\Hypertarget{class_robotstone_acb083ccf137c553a967ff73571d49780}\label{class_robotstone_acb083ccf137c553a967ff73571d49780}} 
+static const uint16\+\_\+t {\bfseries handshake\+Msg\+Step2} = 667
+\item 
+\mbox{\Hypertarget{class_robotstone_a547c8ff855ac0075af1d97bb60ca4eb0}\label{class_robotstone_a547c8ff855ac0075af1d97bb60ca4eb0}} 
+static const size\+\_\+t {\bfseries deadline\+Handshake} = 777
+\item 
+\mbox{\Hypertarget{class_robotstone_a551fb72f8332b388b1c34420586b6351}\label{class_robotstone_a551fb72f8332b388b1c34420586b6351}} 
+static const size\+\_\+t {\bfseries calculate\+Raw\+Speed} = 0
+\item 
+\mbox{\Hypertarget{class_robotstone_a4cd78c3f0df42c5478a8e22b14efa7be}\label{class_robotstone_a4cd78c3f0df42c5478a8e22b14efa7be}} 
+static const size\+\_\+t {\bfseries exp1} = 1
+\item 
+\mbox{\Hypertarget{class_robotstone_a75c8173d7f530e24d99323cb144f79aa}\label{class_robotstone_a75c8173d7f530e24d99323cb144f79aa}} 
+static const size\+\_\+t {\bfseries exp2} = 2
+\item 
+\mbox{\Hypertarget{class_robotstone_a7a3b122719ce560385b527c0eedfee54}\label{class_robotstone_a7a3b122719ce560385b527c0eedfee54}} 
+static const size\+\_\+t {\bfseries exp3} = 3
+\item 
+\mbox{\Hypertarget{class_robotstone_aa94f868f9eb6479f759b449265cdcc77}\label{class_robotstone_aa94f868f9eb6479f759b449265cdcc77}} 
+static const size\+\_\+t {\bfseries exp4} = 4
+\item 
+\mbox{\Hypertarget{class_robotstone_a47922743ce7e475890c0e85c8f7583c4}\label{class_robotstone_a47922743ce7e475890c0e85c8f7583c4}} 
+static const size\+\_\+t {\bfseries exp5} = 5
+\item 
+\mbox{\Hypertarget{class_robotstone_a4251bcbf9ff9c8b587c28d1bfb731012}\label{class_robotstone_a4251bcbf9ff9c8b587c28d1bfb731012}} 
+static const size\+\_\+t {\bfseries exp6} = 6
+\item 
+\mbox{\Hypertarget{class_robotstone_acec9125160f0eab608c8a3c63b7ec794}\label{class_robotstone_acec9125160f0eab608c8a3c63b7ec794}} 
+static const size\+\_\+t {\bfseries exp7} = 7
+\item 
+\mbox{\Hypertarget{class_robotstone_adedc9cee69cea6c0d4fc4f19bf965817}\label{class_robotstone_adedc9cee69cea6c0d4fc4f19bf965817}} 
+static const size\+\_\+t {\bfseries senders} = 1
+\item 
+\mbox{\Hypertarget{class_robotstone_ab45047829d25d32141efe16310eb2bdd}\label{class_robotstone_ab45047829d25d32141efe16310eb2bdd}} 
+static const size\+\_\+t {\bfseries is\+Master} = 1
+\item 
+\mbox{\Hypertarget{class_robotstone_aa2269b11e4a2282f4b9a110d34531d53}\label{class_robotstone_aa2269b11e4a2282f4b9a110d34531d53}} 
+static const size\+\_\+t {\bfseries is\+Slave} = 0
+\item 
+\mbox{\Hypertarget{class_robotstone_a7cbb4d3bac4b9b2e0a319bdd18135147}\label{class_robotstone_a7cbb4d3bac4b9b2e0a319bdd18135147}} 
+static const size\+\_\+t {\bfseries is\+Finished} = 1
+\item 
+\mbox{\Hypertarget{class_robotstone_aa9fe65407ea44f8cb003be864dcf0f39}\label{class_robotstone_aa9fe65407ea44f8cb003be864dcf0f39}} 
+static const size\+\_\+t {\bfseries is\+Started} = 0
+\item 
+\mbox{\Hypertarget{class_robotstone_ac729e05672b5540d818e7d249d50edbf}\label{class_robotstone_ac729e05672b5540d818e7d249d50edbf}} 
+static const size\+\_\+t {\bfseries is\+Run} = 2
+\item 
+static const uint32\+\_\+t \mbox{\hyperlink{class_robotstone_a36fb1c0d71cf874324577eb12ecb0f7a}{raw\+Single\+Load}} = 30
+\item 
+\mbox{\Hypertarget{class_robotstone_aca1641aff92d6c82199209ff429d3222}\label{class_robotstone_aca1641aff92d6c82199209ff429d3222}} 
+static const uint16\+\_\+t {\bfseries baseline\+Number\+Exp\+Uni} = 5
+\item 
+\mbox{\Hypertarget{class_robotstone_a1184afe9823b87a11b3c5e1d7e53fc27}\label{class_robotstone_a1184afe9823b87a11b3c5e1d7e53fc27}} 
+static const uint16\+\_\+t {\bfseries baseline\+Number\+Exp\+Dist} = 3
+\item 
+static const uint32\+\_\+t \mbox{\hyperlink{class_robotstone_a73f638e1e45a640d9e5611905a502bf0}{baseline\+Message\+Size\+Exp\+Dist}} = sizeof(size\+\_\+t)
+\item 
+\mbox{\Hypertarget{class_robotstone_ae67ca908e6ea69f482d10ca5d67cf8b4}\label{class_robotstone_ae67ca908e6ea69f482d10ca5d67cf8b4}} 
+static const uint16\+\_\+t {\bfseries baseline\+Priority\+Exp\+Uni} = 2
+\item 
+static const uint16\+\_\+t \mbox{\hyperlink{class_robotstone_a57d2c35133eddc6e64edc0c99324e5b9}{baseline\+Priority\+Exp\+Dist}} = 2
+\item 
+static const uint8\+\_\+t \mbox{\hyperlink{class_robotstone_affdb318ba583c423ba04f16c33324e17}{man\+Task\+Priority}} = 50
+\item 
+static const uint64\+\_\+t \mbox{\hyperlink{class_robotstone_a12ee37a557f12aa6b025d952ca9b265e}{test\+Period}} = 10000000000
+\item 
+static const uint32\+\_\+t \mbox{\hyperlink{class_robotstone_a5b7cebfe8c3bfaaae4597ecad8e64c01}{task\+Man\+Stack\+Size}} = 1200
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_robotstone_af94d81e9abe19891a9fbeff0e9384836}\label{class_robotstone_af94d81e9abe19891a9fbeff0e9384836}} 
+\mbox{\hyperlink{class_real_time_1_1_local_heap}{Local\+Heap}} {\bfseries rstone\+Heap}
+\item 
+\mbox{\Hypertarget{class_robotstone_a97dbbce46fabfcd9532df43dcd052c38}\label{class_robotstone_a97dbbce46fabfcd9532df43dcd052c38}} 
+\mbox{\hyperlink{class_real_time_1_1_local_heap}{Local\+Heap}} {\bfseries init\+Time\+Heap}
+\item 
+\mbox{\Hypertarget{class_robotstone_a420557efd2ccb93ef9fc68804c281a6e}\label{class_robotstone_a420557efd2ccb93ef9fc68804c281a6e}} 
+size\+\_\+t {\bfseries actual\+Deadline\+Miss}
+\item 
+\mbox{\hyperlink{class_real_time_1_1_subscriber}{Subscriber}} $\ast$ \mbox{\hyperlink{class_robotstone_ab0c61bcc72731b1dff2016a7764c4fb3}{sub\+Man}}
+\item 
+\mbox{\hyperlink{class_real_time_1_1_publisher}{Publisher}} $\ast$ \mbox{\hyperlink{class_robotstone_a62425ed28861cedc98e3c4c7021cc966}{pub\+Man}}
+\item 
+\mbox{\Hypertarget{class_robotstone_a10269dadf12fb59eb783d5056ee240be}\label{class_robotstone_a10269dadf12fb59eb783d5056ee240be}} 
+\mbox{\hyperlink{class_list}{List}}$<$ \mbox{\hyperlink{class_robot_task}{Robot\+Task}}, size\+\_\+t $>$ {\bfseries rstone\+Tasks}
+\item 
+uint64\+\_\+t \mbox{\hyperlink{class_robotstone_af8ef5042ebf1e43d3a2525131f28156a}{raw\+Speed}}
+\item 
+\mbox{\hyperlink{namespace_real_time_ac9006c9ac8d67144a24c561eb81404de}{time\+Count\+\_\+t}} \mbox{\hyperlink{class_robotstone_a3d3d82affdb660b83e4c133b1bc758fe}{raw\+Interval}}
+\item 
+\mbox{\Hypertarget{class_robotstone_a9f609d6c8aea9bd2d09bafabc5eeb950}\label{class_robotstone_a9f609d6c8aea9bd2d09bafabc5eeb950}} 
+\mbox{\hyperlink{class_real_time_1_1_signal}{Signal}} {\bfseries start\+Tasks\+Sig}
+\item 
+\mbox{\Hypertarget{class_robotstone_ae3ce52804269e4901d347ce0bbd1e22c}\label{class_robotstone_ae3ce52804269e4901d347ce0bbd1e22c}} 
+size\+\_\+t {\bfseries actual\+Exp}
+\item 
+\mbox{\Hypertarget{class_robotstone_a5d47de16ba47be080c8da2117e70febf}\label{class_robotstone_a5d47de16ba47be080c8da2117e70febf}} 
+size\+\_\+t {\bfseries experiment\+Reach\+Limit}
+\item 
+\mbox{\Hypertarget{class_robotstone_a7b99897b0c6a26c378438dd56eaf408f}\label{class_robotstone_a7b99897b0c6a26c378438dd56eaf408f}} 
+uint8\+\_\+t $\ast$ {\bfseries stop\+Cond\+Task}
+\item 
+\mbox{\Hypertarget{class_robotstone_a8f0d6610ad798695aa2e776421117138}\label{class_robotstone_a8f0d6610ad798695aa2e776421117138}} 
+\mbox{\hyperlink{namespace_real_time_ac9006c9ac8d67144a24c561eb81404de}{Real\+Time\+::time\+Count\+\_\+t}} $\ast$ {\bfseries initial\+Time}
+\item 
+\mbox{\Hypertarget{class_robotstone_ad83d75c3d5d6ea9de14946b481bee046}\label{class_robotstone_ad83d75c3d5d6ea9de14946b481bee046}} 
+size\+\_\+t {\bfseries dist\+Baseline\+Workload} \mbox{[}3\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_robotstone_a15aa293171c2d46b7ecc2940c3602f20}\label{class_robotstone_a15aa293171c2d46b7ecc2940c3602f20}} 
+\index{Robotstone@{Robotstone}!GetRawSpeed@{GetRawSpeed}}
+\index{GetRawSpeed@{GetRawSpeed}!Robotstone@{Robotstone}}
+\doxysubsubsection{\texorpdfstring{GetRawSpeed()}{GetRawSpeed()}}
+{\footnotesize\ttfamily uint64\+\_\+t Robotstone\+::\+Get\+Raw\+Speed (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Get the processor raw speed in K\+W\+I\+PS. 
+
+\begin{DoxyReturn}{Returns}
+The processor raw speed in K\+W\+I\+PS. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_robotstone_af07c0297ddb1c331fb184b42150d0cc8}\label{class_robotstone_af07c0297ddb1c331fb184b42150d0cc8}} 
+\index{Robotstone@{Robotstone}!GetWorstCase@{GetWorstCase}}
+\index{GetWorstCase@{GetWorstCase}!Robotstone@{Robotstone}}
+\doxysubsubsection{\texorpdfstring{GetWorstCase()}{GetWorstCase()}}
+{\footnotesize\ttfamily void Robotstone\+::\+Get\+Worst\+Case (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{test }\end{DoxyParamCaption})}
+
+
+
+Save the worst case scenario in the experiment. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em The} & test step in a experiment. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_robotstone_a97119321d0e04911bb29591508a00e3f}\label{class_robotstone_a97119321d0e04911bb29591508a00e3f}} 
+\index{Robotstone@{Robotstone}!HandshakeReceive@{HandshakeReceive}}
+\index{HandshakeReceive@{HandshakeReceive}!Robotstone@{Robotstone}}
+\doxysubsubsection{\texorpdfstring{HandshakeReceive()}{HandshakeReceive()}}
+{\footnotesize\ttfamily void Robotstone\+::\+Handshake\+Receive (\begin{DoxyParamCaption}\item[{uint16\+\_\+t $\ast$}]{message }\end{DoxyParamCaption})}
+
+
+
+Receive a message from the sender, by means of a handshake. The receiver will wait for a handshake message by the sender to initiate the transaction. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & -\/ Pointer to the buffer message that will be sent. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_robotstone_a4bf971c1e7c690b6459c1fbf4e22f97f}\label{class_robotstone_a4bf971c1e7c690b6459c1fbf4e22f97f}} 
+\index{Robotstone@{Robotstone}!HandshakeSend@{HandshakeSend}}
+\index{HandshakeSend@{HandshakeSend}!Robotstone@{Robotstone}}
+\doxysubsubsection{\texorpdfstring{HandshakeSend()}{HandshakeSend()}}
+{\footnotesize\ttfamily void Robotstone\+::\+Handshake\+Send (\begin{DoxyParamCaption}\item[{uint16\+\_\+t $\ast$}]{message }\end{DoxyParamCaption})}
+
+
+
+Send a message to the receiver, by means of a handshake. The sender will firstly send a handshake message to initiate the transaction. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & -\/ Pointer to the buffer message that will be sent. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_robotstone_a73f638e1e45a640d9e5611905a502bf0}\label{class_robotstone_a73f638e1e45a640d9e5611905a502bf0}} 
+\index{Robotstone@{Robotstone}!baselineMessageSizeExpDist@{baselineMessageSizeExpDist}}
+\index{baselineMessageSizeExpDist@{baselineMessageSizeExpDist}!Robotstone@{Robotstone}}
+\doxysubsubsection{\texorpdfstring{baselineMessageSizeExpDist}{baselineMessageSizeExpDist}}
+{\footnotesize\ttfamily const uint32\+\_\+t Robotstone\+::baseline\+Message\+Size\+Exp\+Dist = sizeof(size\+\_\+t)\hspace{0.3cm}{\ttfamily [static]}}
+
+Minimal message length. \mbox{\Hypertarget{class_robotstone_a57d2c35133eddc6e64edc0c99324e5b9}\label{class_robotstone_a57d2c35133eddc6e64edc0c99324e5b9}} 
+\index{Robotstone@{Robotstone}!baselinePriorityExpDist@{baselinePriorityExpDist}}
+\index{baselinePriorityExpDist@{baselinePriorityExpDist}!Robotstone@{Robotstone}}
+\doxysubsubsection{\texorpdfstring{baselinePriorityExpDist}{baselinePriorityExpDist}}
+{\footnotesize\ttfamily const uint16\+\_\+t Robotstone\+::baseline\+Priority\+Exp\+Dist = 2\hspace{0.3cm}{\ttfamily [static]}}
+
+Priority of the lowest priority task in the Baseline Task-\/\+Set. \mbox{\Hypertarget{class_robotstone_affdb318ba583c423ba04f16c33324e17}\label{class_robotstone_affdb318ba583c423ba04f16c33324e17}} 
+\index{Robotstone@{Robotstone}!manTaskPriority@{manTaskPriority}}
+\index{manTaskPriority@{manTaskPriority}!Robotstone@{Robotstone}}
+\doxysubsubsection{\texorpdfstring{manTaskPriority}{manTaskPriority}}
+{\footnotesize\ttfamily const uint8\+\_\+t Robotstone\+::man\+Task\+Priority = 50\hspace{0.3cm}{\ttfamily [static]}}
+
+The priority of management task \mbox{\Hypertarget{class_robotstone_a62425ed28861cedc98e3c4c7021cc966}\label{class_robotstone_a62425ed28861cedc98e3c4c7021cc966}} 
+\index{Robotstone@{Robotstone}!pubMan@{pubMan}}
+\index{pubMan@{pubMan}!Robotstone@{Robotstone}}
+\doxysubsubsection{\texorpdfstring{pubMan}{pubMan}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_real_time_1_1_publisher}{Publisher}}$\ast$ Robotstone\+::pub\+Man\hspace{0.3cm}{\ttfamily [protected]}}
+
+Publisher handler for management tasks inter-\/communication \mbox{\Hypertarget{class_robotstone_a3d3d82affdb660b83e4c133b1bc758fe}\label{class_robotstone_a3d3d82affdb660b83e4c133b1bc758fe}} 
+\index{Robotstone@{Robotstone}!rawInterval@{rawInterval}}
+\index{rawInterval@{rawInterval}!Robotstone@{Robotstone}}
+\doxysubsubsection{\texorpdfstring{rawInterval}{rawInterval}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_real_time_ac9006c9ac8d67144a24c561eb81404de}{time\+Count\+\_\+t}} Robotstone\+::raw\+Interval\hspace{0.3cm}{\ttfamily [protected]}}
+
+The measurement interval of K\+WI executed by processor \mbox{\Hypertarget{class_robotstone_a36fb1c0d71cf874324577eb12ecb0f7a}\label{class_robotstone_a36fb1c0d71cf874324577eb12ecb0f7a}} 
+\index{Robotstone@{Robotstone}!rawSingleLoad@{rawSingleLoad}}
+\index{rawSingleLoad@{rawSingleLoad}!Robotstone@{Robotstone}}
+\doxysubsubsection{\texorpdfstring{rawSingleLoad}{rawSingleLoad}}
+{\footnotesize\ttfamily const uint32\+\_\+t Robotstone\+::raw\+Single\+Load = 30\hspace{0.3cm}{\ttfamily [static]}}
+
+The number of K\+WI executed in each raw\+\_\+speed calculation iteration. \mbox{\Hypertarget{class_robotstone_af8ef5042ebf1e43d3a2525131f28156a}\label{class_robotstone_af8ef5042ebf1e43d3a2525131f28156a}} 
+\index{Robotstone@{Robotstone}!rawSpeed@{rawSpeed}}
+\index{rawSpeed@{rawSpeed}!Robotstone@{Robotstone}}
+\doxysubsubsection{\texorpdfstring{rawSpeed}{rawSpeed}}
+{\footnotesize\ttfamily uint64\+\_\+t Robotstone\+::raw\+Speed\hspace{0.3cm}{\ttfamily [protected]}}
+
+The actual processor raw speed in K\+W\+I\+PS \mbox{\Hypertarget{class_robotstone_ab0c61bcc72731b1dff2016a7764c4fb3}\label{class_robotstone_ab0c61bcc72731b1dff2016a7764c4fb3}} 
+\index{Robotstone@{Robotstone}!subMan@{subMan}}
+\index{subMan@{subMan}!Robotstone@{Robotstone}}
+\doxysubsubsection{\texorpdfstring{subMan}{subMan}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_real_time_1_1_subscriber}{Subscriber}}$\ast$ Robotstone\+::sub\+Man\hspace{0.3cm}{\ttfamily [protected]}}
+
+Subscriber handler for management tasks inter-\/communication \mbox{\Hypertarget{class_robotstone_a5b7cebfe8c3bfaaae4597ecad8e64c01}\label{class_robotstone_a5b7cebfe8c3bfaaae4597ecad8e64c01}} 
+\index{Robotstone@{Robotstone}!taskManStackSize@{taskManStackSize}}
+\index{taskManStackSize@{taskManStackSize}!Robotstone@{Robotstone}}
+\doxysubsubsection{\texorpdfstring{taskManStackSize}{taskManStackSize}}
+{\footnotesize\ttfamily const uint32\+\_\+t Robotstone\+::task\+Man\+Stack\+Size = 1200\hspace{0.3cm}{\ttfamily [static]}}
+
+Management Task Stack Depth. \mbox{\Hypertarget{class_robotstone_a12ee37a557f12aa6b025d952ca9b265e}\label{class_robotstone_a12ee37a557f12aa6b025d952ca9b265e}} 
+\index{Robotstone@{Robotstone}!testPeriod@{testPeriod}}
+\index{testPeriod@{testPeriod}!Robotstone@{Robotstone}}
+\doxysubsubsection{\texorpdfstring{testPeriod}{testPeriod}}
+{\footnotesize\ttfamily const uint64\+\_\+t Robotstone\+::test\+Period = 10000000000\hspace{0.3cm}{\ttfamily [static]}}
+
+Duration of each test. The expressed unity is implementation dependent. (in ns. 10 seconds.) 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_robotstone_8hpp}{Robotstone.\+hpp}}\item 
+\mbox{\hyperlink{_robotstone_8cpp}{Robotstone.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,269 @@
+\hypertarget{class_real_time_1_1_topic}{}\doxysection{Real\+Time\+::Topic Class Reference}
+\label{class_real_time_1_1_topic}\index{RealTime::Topic@{RealTime::Topic}}
+
+
+This class represents a specific topic.  
+
+
+
+
+{\ttfamily \#include $<$communic.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_real_time_1_1_topic_a0381dd65d1948408b4ebbd945433058f}{Topic}} (uint8\+\_\+t topic, size\+\_\+t message\+Size)
+\begin{DoxyCompactList}\small\item\em The \mbox{\hyperlink{class_real_time_1_1_topic}{Topic}} class constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_real_time_1_1_topic_a8d31be656a079bcfd24b17301cc1499f}\label{class_real_time_1_1_topic_a8d31be656a079bcfd24b17301cc1499f}} 
+\mbox{\hyperlink{class_real_time_1_1_topic_a8d31be656a079bcfd24b17301cc1499f}{$\sim$\+Topic}} (void)
+\begin{DoxyCompactList}\small\item\em The \mbox{\hyperlink{class_real_time_1_1_topic}{Topic}} class destructor. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_real_time_1_1_topic_a9a5cab84f836bbd72c576ba8ebd6fdac}{Init}} ()
+\begin{DoxyCompactList}\small\item\em Initialize the \mbox{\hyperlink{class_real_time_1_1_topic}{Topic}} instance parameters. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{class_real_time_1_1_topic_a0f00b7fddbdfe3df96a15f4f0dc3ad9a}{Get\+Topic\+ID}} (void)
+\begin{DoxyCompactList}\small\item\em Get the topic identifier. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{class_real_time_1_1_topic_aa9f88d48ed1035f2a0268223a9afce8a}{Add\+Subscriber}} (\mbox{\hyperlink{class_real_time_1_1_subscriber}{Subscriber}} $\ast$sub)
+\begin{DoxyCompactList}\small\item\em Insert a subscriber instance in the topic list. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{class_real_time_1_1_topic_aab2fec05afa137084133b9157466a856}{Add\+Publisher}} (\mbox{\hyperlink{class_real_time_1_1_publisher}{Publisher}} $\ast$pub)
+\begin{DoxyCompactList}\small\item\em Insert a publisher instance in the topic list. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{class_real_time_1_1_topic_ae9722bcafe59957b7e454f77401447d5}{Remove\+Subscriber}} (\mbox{\hyperlink{class_real_time_1_1_subscriber}{Subscriber}} $\ast$sub)
+\begin{DoxyCompactList}\small\item\em Remove a subscriber instance in the topic list. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{class_real_time_1_1_topic_ada88cf43cddfb9c11ce39b2f7633058d}{Remove\+Publisher}} (\mbox{\hyperlink{class_real_time_1_1_publisher}{Publisher}} $\ast$pub)
+\begin{DoxyCompactList}\small\item\em Remove a publisher instance in the topic list. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_real_time_1_1_task}{Task}} $\ast$ \mbox{\hyperlink{class_real_time_1_1_topic_a120396098acd456077ce1cc4788afcd0}{Get\+Task}} (void)
+\begin{DoxyCompactList}\small\item\em Get the topic task gatekeeper object handler. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{class_real_time_1_1_topic_abe59c23f40255a794b2002b805d38f07}{Get\+Objects\+Num\+Global}} (void)
+\begin{DoxyCompactList}\small\item\em Get the total number of publishers and subscribers instances related to the topic in all possible nodes. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{class_real_time_1_1_topic_ac987b4d745af3fbc7fd288713745a480}{Get\+Objects\+Num\+Local}} (void)
+\begin{DoxyCompactList}\small\item\em Get the number of publishers and subscribers instances related to the topic in the local node. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_real_time_1_1_topic_ab04b873373ebb188ea4a23a9791af125}\label{class_real_time_1_1_topic_ab04b873373ebb188ea4a23a9791af125}} 
+message\+\_\+t $\ast$ {\bfseries Get\+From\+Queue} (void)
+\item 
+\mbox{\Hypertarget{class_real_time_1_1_topic_a492e9bd60e919d9e6943da08324241af}\label{class_real_time_1_1_topic_a492e9bd60e919d9e6943da08324241af}} 
+void {\bfseries Release\+Queue} (message\+\_\+t $\ast$queue\+Pointer)
+\item 
+com\+Queue\+\_\+t $\ast$ \mbox{\hyperlink{class_real_time_1_1_topic_ae373c3e4f65c1e32efe4e2ef1f0ffe73}{Get\+Queue}} (void)
+\begin{DoxyCompactList}\small\item\em Get the topic queue. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_real_time_1_1_topic_a327ef193702e5cbda6ab68d5efbdc597}\label{class_real_time_1_1_topic_a327ef193702e5cbda6ab68d5efbdc597}} 
+bool {\bfseries operator==} (\mbox{\hyperlink{class_real_time_1_1_topic}{Topic}} \&other)
+\item 
+\mbox{\Hypertarget{class_real_time_1_1_topic_a348c86236bf1c5c347c7c1bd18ed8099}\label{class_real_time_1_1_topic_a348c86236bf1c5c347c7c1bd18ed8099}} 
+bool {\bfseries operator==} (size\+\_\+t topic\+ID)
+\item 
+\mbox{\Hypertarget{class_real_time_1_1_topic_a498c0edb6b3dc9b840c9d17c988affdf}\label{class_real_time_1_1_topic_a498c0edb6b3dc9b840c9d17c988affdf}} 
+bool {\bfseries Has\+Sub\+ID} (size\+\_\+t id)
+\item 
+\mbox{\Hypertarget{class_real_time_1_1_topic_a11d58b61faffeaf1a78ca0ebbe0e50df}\label{class_real_time_1_1_topic_a11d58b61faffeaf1a78ca0ebbe0e50df}} 
+bool {\bfseries Has\+Pub\+ID} (size\+\_\+t id)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_real_time_1_1_topic_ab43100463f29277e55366bcb9aacb36f}\label{class_real_time_1_1_topic_ab43100463f29277e55366bcb9aacb36f}} 
+\mbox{\hyperlink{class_real_time_1_1_task}{Task}} $\ast$ {\bfseries topic\+Task}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class represents a specific topic. 
+
+\begin{DoxyVerb}      This class is invisible to the tasks. It will be used internally by
+      the Communic system.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_real_time_1_1_topic_a0381dd65d1948408b4ebbd945433058f}\label{class_real_time_1_1_topic_a0381dd65d1948408b4ebbd945433058f}} 
+\index{RealTime::Topic@{RealTime::Topic}!Topic@{Topic}}
+\index{Topic@{Topic}!RealTime::Topic@{RealTime::Topic}}
+\doxysubsubsection{\texorpdfstring{Topic()}{Topic()}}
+{\footnotesize\ttfamily Real\+Time\+::\+Topic\+::\+Topic (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{topic,  }\item[{size\+\_\+t}]{message\+Size }\end{DoxyParamCaption})}
+
+
+
+The \mbox{\hyperlink{class_real_time_1_1_topic}{Topic}} class constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em topic} & -\/ The topic identifier. \\
+\hline
+{\em message\+Size} & -\/ The size of the messages in the requested topic. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_real_time_1_1_topic_aab2fec05afa137084133b9157466a856}\label{class_real_time_1_1_topic_aab2fec05afa137084133b9157466a856}} 
+\index{RealTime::Topic@{RealTime::Topic}!AddPublisher@{AddPublisher}}
+\index{AddPublisher@{AddPublisher}!RealTime::Topic@{RealTime::Topic}}
+\doxysubsubsection{\texorpdfstring{AddPublisher()}{AddPublisher()}}
+{\footnotesize\ttfamily size\+\_\+t Real\+Time\+::\+Topic\+::\+Add\+Publisher (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_real_time_1_1_publisher}{Publisher}} $\ast$}]{pub }\end{DoxyParamCaption})}
+
+
+
+Insert a publisher instance in the topic list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em A} & publisher instance pointer.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/ Real\+Time\+::ok if success;
+\begin{DoxyItemize}
+\item Real\+Time\+::fail otherwise. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_real_time_1_1_topic_aa9f88d48ed1035f2a0268223a9afce8a}\label{class_real_time_1_1_topic_aa9f88d48ed1035f2a0268223a9afce8a}} 
+\index{RealTime::Topic@{RealTime::Topic}!AddSubscriber@{AddSubscriber}}
+\index{AddSubscriber@{AddSubscriber}!RealTime::Topic@{RealTime::Topic}}
+\doxysubsubsection{\texorpdfstring{AddSubscriber()}{AddSubscriber()}}
+{\footnotesize\ttfamily size\+\_\+t Real\+Time\+::\+Topic\+::\+Add\+Subscriber (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_real_time_1_1_subscriber}{Subscriber}} $\ast$}]{sub }\end{DoxyParamCaption})}
+
+
+
+Insert a subscriber instance in the topic list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em A} & subscriber instance pointer.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/ Real\+Time\+::ok if success;
+\begin{DoxyItemize}
+\item Real\+Time\+::fail otherwise. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_real_time_1_1_topic_abe59c23f40255a794b2002b805d38f07}\label{class_real_time_1_1_topic_abe59c23f40255a794b2002b805d38f07}} 
+\index{RealTime::Topic@{RealTime::Topic}!GetObjectsNumGlobal@{GetObjectsNumGlobal}}
+\index{GetObjectsNumGlobal@{GetObjectsNumGlobal}!RealTime::Topic@{RealTime::Topic}}
+\doxysubsubsection{\texorpdfstring{GetObjectsNumGlobal()}{GetObjectsNumGlobal()}}
+{\footnotesize\ttfamily size\+\_\+t Real\+Time\+::\+Topic\+::\+Get\+Objects\+Num\+Global (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Get the total number of publishers and subscribers instances related to the topic in all possible nodes. 
+
+\begin{DoxyReturn}{Returns}
+The number of publishers and subscribers instances. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_real_time_1_1_topic_ac987b4d745af3fbc7fd288713745a480}\label{class_real_time_1_1_topic_ac987b4d745af3fbc7fd288713745a480}} 
+\index{RealTime::Topic@{RealTime::Topic}!GetObjectsNumLocal@{GetObjectsNumLocal}}
+\index{GetObjectsNumLocal@{GetObjectsNumLocal}!RealTime::Topic@{RealTime::Topic}}
+\doxysubsubsection{\texorpdfstring{GetObjectsNumLocal()}{GetObjectsNumLocal()}}
+{\footnotesize\ttfamily size\+\_\+t Real\+Time\+::\+Topic\+::\+Get\+Objects\+Num\+Local (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Get the number of publishers and subscribers instances related to the topic in the local node. 
+
+\begin{DoxyReturn}{Returns}
+The number of publishers and subscribers instances. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_real_time_1_1_topic_ae373c3e4f65c1e32efe4e2ef1f0ffe73}\label{class_real_time_1_1_topic_ae373c3e4f65c1e32efe4e2ef1f0ffe73}} 
+\index{RealTime::Topic@{RealTime::Topic}!GetQueue@{GetQueue}}
+\index{GetQueue@{GetQueue}!RealTime::Topic@{RealTime::Topic}}
+\doxysubsubsection{\texorpdfstring{GetQueue()}{GetQueue()}}
+{\footnotesize\ttfamily com\+Queue\+\_\+t $\ast$ Real\+Time\+::\+Topic\+::\+Get\+Queue (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Get the topic queue. 
+
+\begin{DoxyVerb}      This queue is shared between the publisher and the gatekeeper tasks.
+\end{DoxyVerb}
+
+
+\begin{DoxyReturn}{Returns}
+A pointer to the topic queue. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_real_time_1_1_topic_a120396098acd456077ce1cc4788afcd0}\label{class_real_time_1_1_topic_a120396098acd456077ce1cc4788afcd0}} 
+\index{RealTime::Topic@{RealTime::Topic}!GetTask@{GetTask}}
+\index{GetTask@{GetTask}!RealTime::Topic@{RealTime::Topic}}
+\doxysubsubsection{\texorpdfstring{GetTask()}{GetTask()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_real_time_1_1_task}{Task}} $\ast$ Real\+Time\+::\+Topic\+::\+Get\+Task (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Get the topic task gatekeeper object handler. 
+
+\begin{DoxyReturn}{Returns}
+The pointer to the task gatekeeper object handler. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_real_time_1_1_topic_a0f00b7fddbdfe3df96a15f4f0dc3ad9a}\label{class_real_time_1_1_topic_a0f00b7fddbdfe3df96a15f4f0dc3ad9a}} 
+\index{RealTime::Topic@{RealTime::Topic}!GetTopicID@{GetTopicID}}
+\index{GetTopicID@{GetTopicID}!RealTime::Topic@{RealTime::Topic}}
+\doxysubsubsection{\texorpdfstring{GetTopicID()}{GetTopicID()}}
+{\footnotesize\ttfamily size\+\_\+t Real\+Time\+::\+Topic\+::\+Get\+Topic\+ID (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Get the topic identifier. 
+
+\begin{DoxyReturn}{Returns}
+The topic identifier. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_real_time_1_1_topic_a9a5cab84f836bbd72c576ba8ebd6fdac}\label{class_real_time_1_1_topic_a9a5cab84f836bbd72c576ba8ebd6fdac}} 
+\index{RealTime::Topic@{RealTime::Topic}!Init@{Init}}
+\index{Init@{Init}!RealTime::Topic@{RealTime::Topic}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily int Real\+Time\+::\+Topic\+::\+Init (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Initialize the \mbox{\hyperlink{class_real_time_1_1_topic}{Topic}} instance parameters. 
+
+\begin{DoxyReturn}{Returns}
+-\/ Real\+Time\+::ok if success;
+\begin{DoxyItemize}
+\item Real\+Time\+::fail otherwise. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_real_time_1_1_topic_ada88cf43cddfb9c11ce39b2f7633058d}\label{class_real_time_1_1_topic_ada88cf43cddfb9c11ce39b2f7633058d}} 
+\index{RealTime::Topic@{RealTime::Topic}!RemovePublisher@{RemovePublisher}}
+\index{RemovePublisher@{RemovePublisher}!RealTime::Topic@{RealTime::Topic}}
+\doxysubsubsection{\texorpdfstring{RemovePublisher()}{RemovePublisher()}}
+{\footnotesize\ttfamily size\+\_\+t Real\+Time\+::\+Topic\+::\+Remove\+Publisher (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_real_time_1_1_publisher}{Publisher}} $\ast$}]{pub }\end{DoxyParamCaption})}
+
+
+
+Remove a publisher instance in the topic list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em A} & subscriber instance pointer.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/ Real\+Time\+::ok if success;
+\begin{DoxyItemize}
+\item Real\+Time\+::fail otherwise. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_real_time_1_1_topic_ae9722bcafe59957b7e454f77401447d5}\label{class_real_time_1_1_topic_ae9722bcafe59957b7e454f77401447d5}} 
+\index{RealTime::Topic@{RealTime::Topic}!RemoveSubscriber@{RemoveSubscriber}}
+\index{RemoveSubscriber@{RemoveSubscriber}!RealTime::Topic@{RealTime::Topic}}
+\doxysubsubsection{\texorpdfstring{RemoveSubscriber()}{RemoveSubscriber()}}
+{\footnotesize\ttfamily size\+\_\+t Real\+Time\+::\+Topic\+::\+Remove\+Subscriber (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_real_time_1_1_subscriber}{Subscriber}} $\ast$}]{sub }\end{DoxyParamCaption})}
+
+
+
+Remove a subscriber instance in the topic list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em A} & subscriber instance pointer.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/ Real\+Time\+::ok if success;
+\begin{DoxyItemize}
+\item Real\+Time\+::fail otherwise. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+communic.\+hpp\item 
+\mbox{\hyperlink{communic_8cpp}{communic.\+cpp}}\end{DoxyCompactItemize}

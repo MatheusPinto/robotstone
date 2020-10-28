@@ -1,0 +1,42 @@
+\hypertarget{rtheap_8hpp}{}\doxysection{rtheap.\+hpp File Reference}
+\label{rtheap_8hpp}\index{rtheap.hpp@{rtheap.hpp}}
+{\ttfamily \#include \char`\"{}alchemy/heap.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}stdlib.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}stdout.\+hpp\char`\"{}}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_real_time_1_1_local_heap}{Real\+Time\+::\+Local\+Heap}}
+\begin{DoxyCompactList}\small\item\em Class used to share dynamic allocated memory between tasks using a common string identifier. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespace_real_time}{Real\+Time}}
+\begin{DoxyCompactList}\small\item\em Namespace related to real-\/time services. \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespace_real_time_1_1_heap}{Real\+Time\+::\+Heap}}
+\begin{DoxyCompactList}\small\item\em Namespace related to dynamic allocation services. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespace_real_time_1_1_heap_ae2b61885b317b8bfdcc936ae91c4ca48}\label{namespace_real_time_1_1_heap_ae2b61885b317b8bfdcc936ae91c4ca48}} 
+void \mbox{\hyperlink{namespace_real_time_1_1_heap_ae2b61885b317b8bfdcc936ae91c4ca48}{Real\+Time\+::\+Heap\+::\+Init\+Global}} (void)
+\begin{DoxyCompactList}\small\item\em Initialized the system global parameters for system allocation. \end{DoxyCompactList}\item 
+void $\ast$ \mbox{\hyperlink{namespace_real_time_1_1_heap_a41d51a31676c2e4a190e275a8f7e019e}{Real\+Time\+::\+Heap\+::\+Alloc}} (size\+\_\+t size)
+\begin{DoxyCompactList}\small\item\em Allocates a memory region dynamically. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespace_real_time_1_1_heap_a1e4666f09b6a5ade633d434d1134f35b}{Real\+Time\+::\+Heap\+::\+Free}} (void $\ast$block)
+\begin{DoxyCompactList}\small\item\em Free the memory region previously allocated. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Matheus Leitzke Pinto \href{mailto:matheus.pinto@ifsc.edu.br}{\texttt{ matheus.\+pinto@ifsc.\+edu.\+br}} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0
+\end{DoxyVersion}
+\hypertarget{timer_8hpp_LICENSE}{}\doxysubsection{L\+I\+C\+E\+N\+SE}\label{timer_8hpp_LICENSE}
+This program is free software; you can redistribute it and/or modify it under the terms of the G\+NU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but W\+I\+T\+H\+O\+UT A\+NY W\+A\+R\+R\+A\+N\+TY; without even the implied warranty of M\+E\+R\+C\+H\+A\+N\+T\+A\+B\+I\+L\+I\+TY or F\+I\+T\+N\+E\+SS F\+OR A P\+A\+R\+T\+I\+C\+U\+L\+AR P\+U\+R\+P\+O\+SE. See the G\+NU General Public License for more details at \href{http://www.gnu.org/copyleft/gpl.html}{\texttt{ http\+://www.\+gnu.\+org/copyleft/gpl.\+html}}\hypertarget{timer_8hpp_DESCRIPTION}{}\doxysubsection{D\+E\+S\+C\+R\+I\+P\+T\+I\+ON}\label{timer_8hpp_DESCRIPTION}
+This module contains services related to dynamic memory allocation. 

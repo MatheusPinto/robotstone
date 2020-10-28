@@ -1,0 +1,85 @@
+\hypertarget{class_real_time_1_1_signal}{}\doxysection{Real\+Time\+::Signal Class Reference}
+\label{class_real_time_1_1_signal}\index{RealTime::Signal@{RealTime::Signal}}
+
+
+Class that provides services to signal tasks that a condition was satisfied.  
+
+
+
+
+{\ttfamily \#include $<$rtsignal.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_real_time_1_1_signal_a2ccd2de39c39dce06d3b6b8bb2282035}{Signal}} (const char $\ast$name)
+\begin{DoxyCompactList}\small\item\em The \mbox{\hyperlink{class_real_time_1_1_signal}{Signal}} class constructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_real_time_1_1_signal_adfcc27969cd5a2a5992ceb7624fed17f}{Signalize\+Uni}} (void)
+\begin{DoxyCompactList}\small\item\em Sent the signal to one task. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_real_time_1_1_signal_ace45b6fbfd7f65ef5cda6531c943516e}{Signalize\+Broad}} (void)
+\begin{DoxyCompactList}\small\item\em Broadcast the signal to many tasks. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_real_time_1_1_signal_ac98ba39405fa6358ff655213fe8eb8a9}{Wait}} (void)
+\begin{DoxyCompactList}\small\item\em Wait to the signal arrives. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_real_time_1_1_signal_aaa3def6e71b6f4c1d14c93e8947daf14}\label{class_real_time_1_1_signal_aaa3def6e71b6f4c1d14c93e8947daf14}} 
+const char $\ast$ \mbox{\hyperlink{class_real_time_1_1_signal_aaa3def6e71b6f4c1d14c93e8947daf14}{Get\+Name}} (void)
+\begin{DoxyCompactList}\small\item\em Get the name which signal is referred. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class that provides services to signal tasks that a condition was satisfied. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_real_time_1_1_signal_a2ccd2de39c39dce06d3b6b8bb2282035}\label{class_real_time_1_1_signal_a2ccd2de39c39dce06d3b6b8bb2282035}} 
+\index{RealTime::Signal@{RealTime::Signal}!Signal@{Signal}}
+\index{Signal@{Signal}!RealTime::Signal@{RealTime::Signal}}
+\doxysubsubsection{\texorpdfstring{Signal()}{Signal()}}
+{\footnotesize\ttfamily Real\+Time\+::\+Signal\+::\+Signal (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name }\end{DoxyParamCaption})}
+
+
+
+The \mbox{\hyperlink{class_real_time_1_1_signal}{Signal}} class constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & -\/ A null terminated string to identify signal for sharing. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_real_time_1_1_signal_ace45b6fbfd7f65ef5cda6531c943516e}\label{class_real_time_1_1_signal_ace45b6fbfd7f65ef5cda6531c943516e}} 
+\index{RealTime::Signal@{RealTime::Signal}!SignalizeBroad@{SignalizeBroad}}
+\index{SignalizeBroad@{SignalizeBroad}!RealTime::Signal@{RealTime::Signal}}
+\doxysubsubsection{\texorpdfstring{SignalizeBroad()}{SignalizeBroad()}}
+{\footnotesize\ttfamily void Real\+Time\+::\+Signal\+::\+Signalize\+Broad (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Broadcast the signal to many tasks. 
+
+The task must be waiting in \mbox{\hyperlink{class_real_time_1_1_signal_ac98ba39405fa6358ff655213fe8eb8a9}{Signal\+::\+Wait}} method. If not, the tasks that call \mbox{\hyperlink{class_real_time_1_1_signal_ac98ba39405fa6358ff655213fe8eb8a9}{Signal\+::\+Wait}} after a call to \mbox{\hyperlink{class_real_time_1_1_signal_ace45b6fbfd7f65ef5cda6531c943516e}{Signal\+::\+Signalize\+Broad}} will be blocked indefinitely. \mbox{\Hypertarget{class_real_time_1_1_signal_adfcc27969cd5a2a5992ceb7624fed17f}\label{class_real_time_1_1_signal_adfcc27969cd5a2a5992ceb7624fed17f}} 
+\index{RealTime::Signal@{RealTime::Signal}!SignalizeUni@{SignalizeUni}}
+\index{SignalizeUni@{SignalizeUni}!RealTime::Signal@{RealTime::Signal}}
+\doxysubsubsection{\texorpdfstring{SignalizeUni()}{SignalizeUni()}}
+{\footnotesize\ttfamily void Real\+Time\+::\+Signal\+::\+Signalize\+Uni (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Sent the signal to one task. 
+
+The task can be waiting in \mbox{\hyperlink{class_real_time_1_1_signal_ac98ba39405fa6358ff655213fe8eb8a9}{Signal\+::\+Wait}} method, or even not reach this method yet. In the last case, as soon the task enters in \mbox{\hyperlink{class_real_time_1_1_signal_adfcc27969cd5a2a5992ceb7624fed17f}{Signal\+::\+Signalize\+Uni}}, it will go out if signal was sent. Otherwise it will block until signal arrives. \mbox{\Hypertarget{class_real_time_1_1_signal_ac98ba39405fa6358ff655213fe8eb8a9}\label{class_real_time_1_1_signal_ac98ba39405fa6358ff655213fe8eb8a9}} 
+\index{RealTime::Signal@{RealTime::Signal}!Wait@{Wait}}
+\index{Wait@{Wait}!RealTime::Signal@{RealTime::Signal}}
+\doxysubsubsection{\texorpdfstring{Wait()}{Wait()}}
+{\footnotesize\ttfamily void Real\+Time\+::\+Signal\+::\+Wait (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Wait to the signal arrives. 
+
+The task will be blocked until the signal arrives. See \mbox{\hyperlink{class_real_time_1_1_signal_adfcc27969cd5a2a5992ceb7624fed17f}{Signal\+::\+Signalize\+Uni}} and \mbox{\hyperlink{class_real_time_1_1_signal_ace45b6fbfd7f65ef5cda6531c943516e}{Signal\+::\+Signalize\+Broad}} for sending a signal. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+rtsignal.\+hpp\item 
+rtsignal.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,233 @@
+\hypertarget{class_real_time_1_1_task}{}\doxysection{Real\+Time\+::Task Class Reference}
+\label{class_real_time_1_1_task}\index{RealTime::Task@{RealTime::Task}}
+
+
+This class encapsulates all services related to the management of a real-\/time task.  
+
+
+
+
+{\ttfamily \#include $<$task.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_real_time_1_1_task_a58da4769d9b8b9ff5b5c5c18cc0dec7c}{Task}} (task\+Code\+\_\+t code, uint8\+\_\+t priority, uint32\+\_\+t memory, void $\ast$args, size\+\_\+t id, const char $\ast$name)
+\begin{DoxyCompactList}\small\item\em The \mbox{\hyperlink{class_real_time_1_1_task}{Task}} class constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_real_time_1_1_task_a60374280ed7db98fa8ce026d05cfeab4}\label{class_real_time_1_1_task_a60374280ed7db98fa8ce026d05cfeab4}} 
+\mbox{\hyperlink{class_real_time_1_1_task_a60374280ed7db98fa8ce026d05cfeab4}{$\sim$\+Task}} (void)
+\begin{DoxyCompactList}\small\item\em The \mbox{\hyperlink{class_real_time_1_1_task}{Task}} class destructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_real_time_1_1_task_a16341a01068572624ad164ebabf43333}\label{class_real_time_1_1_task_a16341a01068572624ad164ebabf43333}} 
+bool {\bfseries operator==} (const \mbox{\hyperlink{class_real_time_1_1_task}{Task}} \&task) const
+\item 
+\mbox{\Hypertarget{class_real_time_1_1_task_a4dc659b002c0fb6f3a4a554154ce7062}\label{class_real_time_1_1_task_a4dc659b002c0fb6f3a4a554154ce7062}} 
+bool {\bfseries operator==} (const size\+\_\+t id) const
+\item 
+void $\ast$ \mbox{\hyperlink{class_real_time_1_1_task_ae3ec48b0f0a03210fa7f1b569f4e256b}{Get\+Args}} (void)
+\begin{DoxyCompactList}\small\item\em Get the task arguments pointer. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{class_real_time_1_1_task_a71a8ac37e055b4d62b5e6e4dc7dcecdf}{Get\+ID}} (void)
+\begin{DoxyCompactList}\small\item\em Get the task identifier. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{class_real_time_1_1_task_a490829d3119575848ac6c54be9d83626}{Get\+Memory\+Lenght}} (void)
+\begin{DoxyCompactList}\small\item\em Get the task memory length. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{class_real_time_1_1_task_aa02ecaa1782fc948ec30d1b95864f1b3}{Get\+Priority}} (void)
+\begin{DoxyCompactList}\small\item\em Get the task priority. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_real_time_1_1_task_a44cfd6a6f4f120ba5f10c83f6bfbbbdf}\label{class_real_time_1_1_task_a44cfd6a6f4f120ba5f10c83f6bfbbbdf}} 
+void \mbox{\hyperlink{class_real_time_1_1_task_a44cfd6a6f4f120ba5f10c83f6bfbbbdf}{Start}} (void)
+\begin{DoxyCompactList}\small\item\em Starts the task execution as soon it its turn to use C\+PU. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_real_time_1_1_task_aded641424d39d379051edb72f53a8b4c}{Increase\+Priority}} (size\+\_\+t prio\+Inc)
+\begin{DoxyCompactList}\small\item\em Increase the task priority. \end{DoxyCompactList}\item 
+task\+Handle\+\_\+t $\ast$ \mbox{\hyperlink{class_real_time_1_1_task_a58c1a297303b732396afc7f3f8396f30}{Get\+Handle}} (void)
+\begin{DoxyCompactList}\small\item\em Return the system implementation handler of the task. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_real_time_1_1_task_a5388cf6f2a3139f7a9437aa55cb8e8a9}\label{class_real_time_1_1_task_a5388cf6f2a3139f7a9437aa55cb8e8a9}} 
+void \mbox{\hyperlink{class_real_time_1_1_task_a5388cf6f2a3139f7a9437aa55cb8e8a9}{Join}} (void)
+\begin{DoxyCompactList}\small\item\em A call to this method will block the caller until the task finish its execution. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_real_time_1_1_task_ae660ad876a096effc1f3330a911f612f}\label{class_real_time_1_1_task_ae660ad876a096effc1f3330a911f612f}} 
+void \mbox{\hyperlink{class_real_time_1_1_task_ae660ad876a096effc1f3330a911f612f}{Resume}} (void)
+\begin{DoxyCompactList}\small\item\em A call to this method will resume the task instance of the method. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_real_time_1_1_task_a4a856d501cbbd1aa4a51f70fc96c9126}\label{class_real_time_1_1_task_a4a856d501cbbd1aa4a51f70fc96c9126}} 
+void \mbox{\hyperlink{class_real_time_1_1_task_a4a856d501cbbd1aa4a51f70fc96c9126}{Unblock}} (void)
+\begin{DoxyCompactList}\small\item\em A call to this method will unblock the task instance of the method. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static size\+\_\+t \mbox{\hyperlink{class_real_time_1_1_task_a885f7dfc2520d77e15421b57bf8cd9c7}{Get\+P\+ID}} (void)
+\begin{DoxyCompactList}\small\item\em Return the system implementation P\+ID reserved to the task. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_real_time_1_1_task_ad764baefbd41e3b61e73c3d435489f0e}\label{class_real_time_1_1_task_ad764baefbd41e3b61e73c3d435489f0e}} 
+static void \mbox{\hyperlink{class_real_time_1_1_task_ad764baefbd41e3b61e73c3d435489f0e}{Suspend}} (void)
+\begin{DoxyCompactList}\small\item\em A call to this method will suspend the caller. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_real_time_1_1_task_a76f4dd10c3f70ef26f79ece474eb372a}{Delay}} (\mbox{\hyperlink{namespace_real_time_ac9006c9ac8d67144a24c561eb81404de}{time\+Count\+\_\+t}} period)
+\begin{DoxyCompactList}\small\item\em Delay the caller for a time period, putting it in a suspended state. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_real_time_1_1_task_af82255af333ff4965b2cb018d7e8c39e}{Delay\+Until}} (\mbox{\hyperlink{namespace_real_time_ac9006c9ac8d67144a24c561eb81404de}{time\+Count\+\_\+t}} date)
+\begin{DoxyCompactList}\small\item\em Delay the caller until it reaches a specified time instant, putting it in a suspended state. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_real_time_1_1_task_a0b17466e69f4281e0244af6ae911b630}\label{class_real_time_1_1_task_a0b17466e69f4281e0244af6ae911b630}} 
+static const uint8\+\_\+t {\bfseries max\+Priority} = 99
+\item 
+\mbox{\Hypertarget{class_real_time_1_1_task_a0572a6486c854abfdc8ec36cd75bdb48}\label{class_real_time_1_1_task_a0572a6486c854abfdc8ec36cd75bdb48}} 
+static const uint8\+\_\+t {\bfseries min\+Priority} = 1
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class encapsulates all services related to the management of a real-\/time task. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_real_time_1_1_task_a58da4769d9b8b9ff5b5c5c18cc0dec7c}\label{class_real_time_1_1_task_a58da4769d9b8b9ff5b5c5c18cc0dec7c}} 
+\index{RealTime::Task@{RealTime::Task}!Task@{Task}}
+\index{Task@{Task}!RealTime::Task@{RealTime::Task}}
+\doxysubsubsection{\texorpdfstring{Task()}{Task()}}
+{\footnotesize\ttfamily Real\+Time\+::\+Task\+::\+Task (\begin{DoxyParamCaption}\item[{task\+Code\+\_\+t}]{func,  }\item[{uint8\+\_\+t}]{priority,  }\item[{uint32\+\_\+t}]{memory,  }\item[{void $\ast$}]{args,  }\item[{size\+\_\+t}]{id,  }\item[{const char $\ast$}]{name }\end{DoxyParamCaption})}
+
+
+
+The \mbox{\hyperlink{class_real_time_1_1_task}{Task}} class constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em func} & -\/ A pointer to the function where task will run. This function must be created with the macro \mbox{\hyperlink{namespace_real_time_ab5ac54dc4a6de759c9eda696a968abd5}{task\+F\+U\+N\+C\+T\+I\+ON}}. \\
+\hline
+{\em priority} & -\/ The task priority. \\
+\hline
+{\em memory} & -\/ The stack memory size reserved for the task. \\
+\hline
+{\em args} & -\/ A pointer for task arguments. \\
+\hline
+{\em id} & -\/ A unique task identifier. \\
+\hline
+{\em name} & -\/ A optional task name or \char`\"{}\char`\"{}. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_real_time_1_1_task_a76f4dd10c3f70ef26f79ece474eb372a}\label{class_real_time_1_1_task_a76f4dd10c3f70ef26f79ece474eb372a}} 
+\index{RealTime::Task@{RealTime::Task}!Delay@{Delay}}
+\index{Delay@{Delay}!RealTime::Task@{RealTime::Task}}
+\doxysubsubsection{\texorpdfstring{Delay()}{Delay()}}
+{\footnotesize\ttfamily void Real\+Time\+::\+Task\+::\+Delay (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_real_time_ac9006c9ac8d67144a24c561eb81404de}{time\+Count\+\_\+t}}}]{period }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Delay the caller for a time period, putting it in a suspended state. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em period} & -\/ The delay period in implementation specific units. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_real_time_1_1_task_af82255af333ff4965b2cb018d7e8c39e}\label{class_real_time_1_1_task_af82255af333ff4965b2cb018d7e8c39e}} 
+\index{RealTime::Task@{RealTime::Task}!DelayUntil@{DelayUntil}}
+\index{DelayUntil@{DelayUntil}!RealTime::Task@{RealTime::Task}}
+\doxysubsubsection{\texorpdfstring{DelayUntil()}{DelayUntil()}}
+{\footnotesize\ttfamily void Real\+Time\+::\+Task\+::\+Delay\+Until (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_real_time_ac9006c9ac8d67144a24c561eb81404de}{time\+Count\+\_\+t}}}]{date }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Delay the caller until it reaches a specified time instant, putting it in a suspended state. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em date} & -\/ The time instant, in implementation specific units, which task must awake. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_real_time_1_1_task_ae3ec48b0f0a03210fa7f1b569f4e256b}\label{class_real_time_1_1_task_ae3ec48b0f0a03210fa7f1b569f4e256b}} 
+\index{RealTime::Task@{RealTime::Task}!GetArgs@{GetArgs}}
+\index{GetArgs@{GetArgs}!RealTime::Task@{RealTime::Task}}
+\doxysubsubsection{\texorpdfstring{GetArgs()}{GetArgs()}}
+{\footnotesize\ttfamily void $\ast$ Real\+Time\+::\+Task\+::\+Get\+Args (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Get the task arguments pointer. 
+
+\begin{DoxyReturn}{Returns}
+The task arguments pointer. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_real_time_1_1_task_a58c1a297303b732396afc7f3f8396f30}\label{class_real_time_1_1_task_a58c1a297303b732396afc7f3f8396f30}} 
+\index{RealTime::Task@{RealTime::Task}!GetHandle@{GetHandle}}
+\index{GetHandle@{GetHandle}!RealTime::Task@{RealTime::Task}}
+\doxysubsubsection{\texorpdfstring{GetHandle()}{GetHandle()}}
+{\footnotesize\ttfamily task\+Handle\+\_\+t $\ast$ Real\+Time\+::\+Task\+::\+Get\+Handle (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Return the system implementation handler of the task. 
+
+\begin{DoxyReturn}{Returns}
+Pointer to the system implementation handler of the task. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_real_time_1_1_task_a71a8ac37e055b4d62b5e6e4dc7dcecdf}\label{class_real_time_1_1_task_a71a8ac37e055b4d62b5e6e4dc7dcecdf}} 
+\index{RealTime::Task@{RealTime::Task}!GetID@{GetID}}
+\index{GetID@{GetID}!RealTime::Task@{RealTime::Task}}
+\doxysubsubsection{\texorpdfstring{GetID()}{GetID()}}
+{\footnotesize\ttfamily uint8\+\_\+t Real\+Time\+::\+Task\+::\+Get\+ID (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Get the task identifier. 
+
+\begin{DoxyReturn}{Returns}
+The task identifier. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_real_time_1_1_task_a490829d3119575848ac6c54be9d83626}\label{class_real_time_1_1_task_a490829d3119575848ac6c54be9d83626}} 
+\index{RealTime::Task@{RealTime::Task}!GetMemoryLenght@{GetMemoryLenght}}
+\index{GetMemoryLenght@{GetMemoryLenght}!RealTime::Task@{RealTime::Task}}
+\doxysubsubsection{\texorpdfstring{GetMemoryLenght()}{GetMemoryLenght()}}
+{\footnotesize\ttfamily uint32\+\_\+t Real\+Time\+::\+Task\+::\+Get\+Memory\+Lenght (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Get the task memory length. 
+
+\begin{DoxyReturn}{Returns}
+The task memory length. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_real_time_1_1_task_a885f7dfc2520d77e15421b57bf8cd9c7}\label{class_real_time_1_1_task_a885f7dfc2520d77e15421b57bf8cd9c7}} 
+\index{RealTime::Task@{RealTime::Task}!GetPID@{GetPID}}
+\index{GetPID@{GetPID}!RealTime::Task@{RealTime::Task}}
+\doxysubsubsection{\texorpdfstring{GetPID()}{GetPID()}}
+{\footnotesize\ttfamily size\+\_\+t Real\+Time\+::\+Task\+::\+Get\+P\+ID (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Return the system implementation P\+ID reserved to the task. 
+
+\begin{DoxyReturn}{Returns}
+The system implementation P\+ID reserved to the task. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_real_time_1_1_task_aa02ecaa1782fc948ec30d1b95864f1b3}\label{class_real_time_1_1_task_aa02ecaa1782fc948ec30d1b95864f1b3}} 
+\index{RealTime::Task@{RealTime::Task}!GetPriority@{GetPriority}}
+\index{GetPriority@{GetPriority}!RealTime::Task@{RealTime::Task}}
+\doxysubsubsection{\texorpdfstring{GetPriority()}{GetPriority()}}
+{\footnotesize\ttfamily uint8\+\_\+t Real\+Time\+::\+Task\+::\+Get\+Priority (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Get the task priority. 
+
+\begin{DoxyReturn}{Returns}
+The task priority. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_real_time_1_1_task_aded641424d39d379051edb72f53a8b4c}\label{class_real_time_1_1_task_aded641424d39d379051edb72f53a8b4c}} 
+\index{RealTime::Task@{RealTime::Task}!IncreasePriority@{IncreasePriority}}
+\index{IncreasePriority@{IncreasePriority}!RealTime::Task@{RealTime::Task}}
+\doxysubsubsection{\texorpdfstring{IncreasePriority()}{IncreasePriority()}}
+{\footnotesize\ttfamily void Real\+Time\+::\+Task\+::\+Increase\+Priority (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{prio\+Inc }\end{DoxyParamCaption})}
+
+
+
+Increase the task priority. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em prio\+Inc} & -\/ The number of priority increments. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{task_8hpp}{task.\+hpp}}\item 
+\mbox{\hyperlink{task_8cpp}{task.\+cpp}}\end{DoxyCompactItemize}

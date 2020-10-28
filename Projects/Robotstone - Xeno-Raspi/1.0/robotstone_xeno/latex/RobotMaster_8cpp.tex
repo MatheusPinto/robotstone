@@ -1,0 +1,63 @@
+\hypertarget{RobotMaster_8cpp}{}\doxysection{Robot\+Master.\+cpp File Reference}
+\label{RobotMaster_8cpp}\index{RobotMaster.cpp@{RobotMaster.cpp}}
+{\ttfamily \#include \char`\"{}Robot\+Master.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Robot\+Task.\+hpp\char`\"{}}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$alchemy/timer.\+h$>$}\newline
+{\ttfamily \#include $<$alchemy/heap.\+h$>$}\newline
+{\ttfamily \#include $<$sys/types.\+h$>$}\newline
+{\ttfamily \#include $<$unistd.\+h$>$}\newline
+{\ttfamily \#include $<$sched.\+h$>$}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{RobotMaster_8cpp_a5de8959ac119f38657e946a1ff3f5713}{Manage\+Master\+Task}} (void $\ast$args)
+\begin{DoxyCompactList}\small\item\em The entry function of the management task in Master node. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{RobotMaster_8cpp_a9cf99337b7b7365aa7edcc37334a94b8}{task\+F\+U\+N\+C\+T\+I\+ON}} (\mbox{\hyperlink{RobotMaster_8cpp_a5de8959ac119f38657e946a1ff3f5713}{Manage\+Master\+Task}}, args)
+\begin{DoxyCompactList}\small\item\em The entry function of the management task in Master node. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Matheus Leitzke Pinto \href{mailto:matheus.pinto@ifsc.edu.br}{\texttt{ matheus.\+pinto@ifsc.\+edu.\+br}} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0
+\end{DoxyVersion}
+\hypertarget{RobotTask_8hpp_LICENSE}{}\doxysubsection{L\+I\+C\+E\+N\+SE}\label{RobotTask_8hpp_LICENSE}
+This program is free software; you can redistribute it and/or modify it under the terms of the G\+NU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but W\+I\+T\+H\+O\+UT A\+NY W\+A\+R\+R\+A\+N\+TY; without even the implied warranty of M\+E\+R\+C\+H\+A\+N\+T\+A\+B\+I\+L\+I\+TY or F\+I\+T\+N\+E\+SS F\+OR A P\+A\+R\+T\+I\+C\+U\+L\+AR P\+U\+R\+P\+O\+SE. See the G\+NU General Public License for more details at \href{http://www.gnu.org/copyleft/gpl.html}{\texttt{ http\+://www.\+gnu.\+org/copyleft/gpl.\+html}}\hypertarget{RobotTask_8hpp_DESCRIPTION}{}\doxysubsection{D\+E\+S\+C\+R\+I\+P\+T\+I\+ON}\label{RobotTask_8hpp_DESCRIPTION}
+This module contains the implementation of the \mbox{\hyperlink{classRobotMaster}{Robot\+Master}} class, which will be used by the benchmark Master node. 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{RobotMaster_8cpp_a5de8959ac119f38657e946a1ff3f5713}\label{RobotMaster_8cpp_a5de8959ac119f38657e946a1ff3f5713}} 
+\index{RobotMaster.cpp@{RobotMaster.cpp}!ManageMasterTask@{ManageMasterTask}}
+\index{ManageMasterTask@{ManageMasterTask}!RobotMaster.cpp@{RobotMaster.cpp}}
+\doxysubsubsection{\texorpdfstring{ManageMasterTask()}{ManageMasterTask()}}
+{\footnotesize\ttfamily void Manage\+Master\+Task (\begin{DoxyParamCaption}\item[{void $\ast$}]{args }\end{DoxyParamCaption})}
+
+
+
+The entry function of the management task in Master node. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em args} & -\/ Arguments pointer passed to the management task. This will be the pointer of the \mbox{\hyperlink{classRobotMaster}{Robot\+Master}} object. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{RobotMaster_8cpp_a9cf99337b7b7365aa7edcc37334a94b8}\label{RobotMaster_8cpp_a9cf99337b7b7365aa7edcc37334a94b8}} 
+\index{RobotMaster.cpp@{RobotMaster.cpp}!taskFUNCTION@{taskFUNCTION}}
+\index{taskFUNCTION@{taskFUNCTION}!RobotMaster.cpp@{RobotMaster.cpp}}
+\doxysubsubsection{\texorpdfstring{taskFUNCTION()}{taskFUNCTION()}}
+{\footnotesize\ttfamily task\+F\+U\+N\+C\+T\+I\+ON (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{RobotMaster_8cpp_a5de8959ac119f38657e946a1ff3f5713}{Manage\+Master\+Task}}}]{,  }\item[{args}]{ }\end{DoxyParamCaption})}
+
+
+
+The entry function of the management task in Master node. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em args} & -\/ Arguments pointer passed to the management task. This will be the pointer of the \mbox{\hyperlink{classRobotMaster}{Robot\+Master}} object. \\
+\hline
+\end{DoxyParams}

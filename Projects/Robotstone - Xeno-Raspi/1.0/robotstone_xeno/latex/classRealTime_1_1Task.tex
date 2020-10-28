@@ -1,0 +1,92 @@
+\hypertarget{classRealTime_1_1Task}{}\doxysection{Real\+Time\+::Task Class Reference}
+\label{classRealTime_1_1Task}\index{RealTime::Task@{RealTime::Task}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classRealTime_1_1Task_a58da4769d9b8b9ff5b5c5c18cc0dec7c}\label{classRealTime_1_1Task_a58da4769d9b8b9ff5b5c5c18cc0dec7c}} 
+{\bfseries Task} (task\+Code\+\_\+t code, uint8\+\_\+t priority, uint32\+\_\+t memory, void $\ast$args, size\+\_\+t id, const char $\ast$name)
+\item 
+\mbox{\Hypertarget{classRealTime_1_1Task_a16341a01068572624ad164ebabf43333}\label{classRealTime_1_1Task_a16341a01068572624ad164ebabf43333}} 
+bool {\bfseries operator==} (const \mbox{\hyperlink{classRealTime_1_1Task}{Task}} \&task) const
+\item 
+\mbox{\Hypertarget{classRealTime_1_1Task_a4dc659b002c0fb6f3a4a554154ce7062}\label{classRealTime_1_1Task_a4dc659b002c0fb6f3a4a554154ce7062}} 
+bool {\bfseries operator==} (const size\+\_\+t id) const
+\item 
+\mbox{\Hypertarget{classRealTime_1_1Task_a92529c2553bec1a628cbdcb624e2205a}\label{classRealTime_1_1Task_a92529c2553bec1a628cbdcb624e2205a}} 
+void {\bfseries Set\+Args} (void $\ast$args)
+\item 
+\mbox{\Hypertarget{classRealTime_1_1Task_a3f65375632a020230854c92ab5732a02}\label{classRealTime_1_1Task_a3f65375632a020230854c92ab5732a02}} 
+void {\bfseries Set\+Memory\+Lenght} (uint32\+\_\+t memory)
+\item 
+\mbox{\Hypertarget{classRealTime_1_1Task_a8f82fb8c5efdecbf9a914d7f78eb1c35}\label{classRealTime_1_1Task_a8f82fb8c5efdecbf9a914d7f78eb1c35}} 
+void {\bfseries Set\+Priority} (size\+\_\+t priority)
+\item 
+\mbox{\Hypertarget{classRealTime_1_1Task_aa3684ab9f4b1b33d92d363cce344d19d}\label{classRealTime_1_1Task_aa3684ab9f4b1b33d92d363cce344d19d}} 
+void {\bfseries Set\+Task\+Code} (task\+Code\+\_\+t code)
+\item 
+\mbox{\Hypertarget{classRealTime_1_1Task_a4c0ccf70ac3f795c0768c8d827fadc44}\label{classRealTime_1_1Task_a4c0ccf70ac3f795c0768c8d827fadc44}} 
+void {\bfseries Set\+ID} (size\+\_\+t id)
+\item 
+\mbox{\Hypertarget{classRealTime_1_1Task_ae3ec48b0f0a03210fa7f1b569f4e256b}\label{classRealTime_1_1Task_ae3ec48b0f0a03210fa7f1b569f4e256b}} 
+void $\ast$ {\bfseries Get\+Args} (void)
+\item 
+\mbox{\Hypertarget{classRealTime_1_1Task_a71a8ac37e055b4d62b5e6e4dc7dcecdf}\label{classRealTime_1_1Task_a71a8ac37e055b4d62b5e6e4dc7dcecdf}} 
+uint8\+\_\+t {\bfseries Get\+ID} (void)
+\item 
+\mbox{\Hypertarget{classRealTime_1_1Task_a490829d3119575848ac6c54be9d83626}\label{classRealTime_1_1Task_a490829d3119575848ac6c54be9d83626}} 
+uint32\+\_\+t {\bfseries Get\+Memory\+Lenght} (void)
+\item 
+\mbox{\Hypertarget{classRealTime_1_1Task_aa02ecaa1782fc948ec30d1b95864f1b3}\label{classRealTime_1_1Task_aa02ecaa1782fc948ec30d1b95864f1b3}} 
+uint8\+\_\+t {\bfseries Get\+Priority} (void)
+\item 
+\mbox{\Hypertarget{classRealTime_1_1Task_a44cfd6a6f4f120ba5f10c83f6bfbbbdf}\label{classRealTime_1_1Task_a44cfd6a6f4f120ba5f10c83f6bfbbbdf}} 
+void {\bfseries Start} (void)
+\item 
+\mbox{\Hypertarget{classRealTime_1_1Task_aded641424d39d379051edb72f53a8b4c}\label{classRealTime_1_1Task_aded641424d39d379051edb72f53a8b4c}} 
+void {\bfseries Increase\+Priority} (size\+\_\+t prio\+Inc)
+\item 
+\mbox{\Hypertarget{classRealTime_1_1Task_a67ace853552051a908758d5cf2af0878}\label{classRealTime_1_1Task_a67ace853552051a908758d5cf2af0878}} 
+task\+Code\+\_\+t {\bfseries Get\+Task\+Code} (void)
+\item 
+\mbox{\Hypertarget{classRealTime_1_1Task_a58c1a297303b732396afc7f3f8396f30}\label{classRealTime_1_1Task_a58c1a297303b732396afc7f3f8396f30}} 
+task\+Handle\+\_\+t $\ast$ {\bfseries Get\+Handle} (void)
+\item 
+\mbox{\Hypertarget{classRealTime_1_1Task_a5388cf6f2a3139f7a9437aa55cb8e8a9}\label{classRealTime_1_1Task_a5388cf6f2a3139f7a9437aa55cb8e8a9}} 
+void {\bfseries Join} (void)
+\item 
+\mbox{\Hypertarget{classRealTime_1_1Task_ae660ad876a096effc1f3330a911f612f}\label{classRealTime_1_1Task_ae660ad876a096effc1f3330a911f612f}} 
+void {\bfseries Resume} (void)
+\item 
+\mbox{\Hypertarget{classRealTime_1_1Task_a4a856d501cbbd1aa4a51f70fc96c9126}\label{classRealTime_1_1Task_a4a856d501cbbd1aa4a51f70fc96c9126}} 
+void {\bfseries Unblock} (void)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classRealTime_1_1Task_a885f7dfc2520d77e15421b57bf8cd9c7}\label{classRealTime_1_1Task_a885f7dfc2520d77e15421b57bf8cd9c7}} 
+static size\+\_\+t {\bfseries Get\+P\+ID} (void)
+\item 
+\mbox{\Hypertarget{classRealTime_1_1Task_ad764baefbd41e3b61e73c3d435489f0e}\label{classRealTime_1_1Task_ad764baefbd41e3b61e73c3d435489f0e}} 
+static void {\bfseries Suspend} (void)
+\item 
+\mbox{\Hypertarget{classRealTime_1_1Task_a76f4dd10c3f70ef26f79ece474eb372a}\label{classRealTime_1_1Task_a76f4dd10c3f70ef26f79ece474eb372a}} 
+static void {\bfseries Delay} (time\+Count\+\_\+t period)
+\item 
+\mbox{\Hypertarget{classRealTime_1_1Task_af82255af333ff4965b2cb018d7e8c39e}\label{classRealTime_1_1Task_af82255af333ff4965b2cb018d7e8c39e}} 
+static void {\bfseries Delay\+Until} (time\+Count\+\_\+t date)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classRealTime_1_1Task_a0b17466e69f4281e0244af6ae911b630}\label{classRealTime_1_1Task_a0b17466e69f4281e0244af6ae911b630}} 
+static const uint8\+\_\+t {\bfseries max\+Priority} = 99
+\item 
+\mbox{\Hypertarget{classRealTime_1_1Task_a0572a6486c854abfdc8ec36cd75bdb48}\label{classRealTime_1_1Task_a0572a6486c854abfdc8ec36cd75bdb48}} 
+static const uint8\+\_\+t {\bfseries min\+Priority} = 1
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+task.\+hpp\item 
+task.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,51 @@
+\hypertarget{realtime_8hpp}{}\doxysection{realtime.\+hpp File Reference}
+\label{realtime_8hpp}\index{realtime.hpp@{realtime.hpp}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include $<$signal.\+h$>$}\newline
+{\ttfamily \#include $<$unistd.\+h$>$}\newline
+{\ttfamily \#include $<$sys/mman.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}timer.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}rtheap.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}stdout.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}communic.\+hpp\char`\"{}}\newline
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespace_real_time}{Real\+Time}}
+\begin{DoxyCompactList}\small\item\em Namespace related to real-\/time services. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespace_real_time_afc3a53505ac93dd044ea8d0e321e996f}\label{namespace_real_time_afc3a53505ac93dd044ea8d0e321e996f}} 
+void \mbox{\hyperlink{namespace_real_time_afc3a53505ac93dd044ea8d0e321e996f}{Real\+Time\+::\+Init}} (void)
+\begin{DoxyCompactList}\small\item\em Initialize the system real-\/time parameters. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespace_real_time_a3feae3ef4051199c9dd985138d436e22}\label{namespace_real_time_a3feae3ef4051199c9dd985138d436e22}} 
+int {\bfseries Real\+Time\+::\+Set\+Exec\+C\+P\+US} (size\+\_\+t cpus)
+\item 
+\mbox{\Hypertarget{namespace_real_time_a1f4f78358268b45a1242095c78d51726}\label{namespace_real_time_a1f4f78358268b45a1242095c78d51726}} 
+size\+\_\+t {\bfseries Real\+Time\+::\+Get\+Exec\+C\+P\+US} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespace_real_time_a8473d4a80b6d1ce3b26e37a71361a95d}\label{namespace_real_time_a8473d4a80b6d1ce3b26e37a71361a95d}} 
+const int {\bfseries Real\+Time\+::ok} = 0
+\item 
+\mbox{\Hypertarget{namespace_real_time_a8af6868ef5937afb0343e57e22ca03bd}\label{namespace_real_time_a8af6868ef5937afb0343e57e22ca03bd}} 
+const int {\bfseries Real\+Time\+::fail} = 1
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Matheus Leitzke Pinto \href{mailto:matheus.pinto@ifsc.edu.br}{\texttt{ matheus.\+pinto@ifsc.\+edu.\+br}} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0
+\end{DoxyVersion}
+\hypertarget{timer_8hpp_LICENSE}{}\doxysubsection{L\+I\+C\+E\+N\+SE}\label{timer_8hpp_LICENSE}
+This program is free software; you can redistribute it and/or modify it under the terms of the G\+NU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but W\+I\+T\+H\+O\+UT A\+NY W\+A\+R\+R\+A\+N\+TY; without even the implied warranty of M\+E\+R\+C\+H\+A\+N\+T\+A\+B\+I\+L\+I\+TY or F\+I\+T\+N\+E\+SS F\+OR A P\+A\+R\+T\+I\+C\+U\+L\+AR P\+U\+R\+P\+O\+SE. See the G\+NU General Public License for more details at \href{http://www.gnu.org/copyleft/gpl.html}{\texttt{ http\+://www.\+gnu.\+org/copyleft/gpl.\+html}}\hypertarget{timer_8hpp_DESCRIPTION}{}\doxysubsection{D\+E\+S\+C\+R\+I\+P\+T\+I\+ON}\label{timer_8hpp_DESCRIPTION}
+This module contains the system initialization A\+PI related to the real-\/time services. 

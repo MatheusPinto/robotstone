@@ -1,0 +1,142 @@
+\hypertarget{namespace_real_time_1_1_communic}{}\doxysection{Real\+Time\+::Communic Namespace Reference}
+\label{namespace_real_time_1_1_communic}\index{RealTime::Communic@{RealTime::Communic}}
+
+
+Namespace related to the communication subsytem services.  
+
+
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{namespace_real_time_1_1_communic_ae319d3b7c66715f5bcb266bbe71cc32b}{Init}} (void)
+\begin{DoxyCompactList}\small\item\em Initialize the \mbox{\hyperlink{namespace_real_time_1_1_communic}{Communic}} subsystem parameters and services. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_real_time_1_1_subscriber}{Subscriber}} $\ast$ \mbox{\hyperlink{namespace_real_time_1_1_communic_aba09d0af7bd35d6e10cadd00a2c5f6c1}{Subscribing\+Request}} (size\+\_\+t topic, uint64\+\_\+t msg\+Size)
+\begin{DoxyCompactList}\small\item\em Make a request for subscribing in a specific topic. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_real_time_1_1_publisher}{Publisher}} $\ast$ \mbox{\hyperlink{namespace_real_time_1_1_communic_af40444728750190df7a0f61b68e03482}{Publishing\+Request}} (size\+\_\+t topic, uint64\+\_\+t msg\+Size)
+\begin{DoxyCompactList}\small\item\em Make a request for publishing in a specific topic. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{namespace_real_time_1_1_communic_a0917770ab31d11369459725e5957b3b2}{Leave\+Topic}} (\mbox{\hyperlink{class_real_time_1_1_publisher}{Publisher}} $\ast$pub\+Handler)
+\begin{DoxyCompactList}\small\item\em Request to leave the publishing in a specific topic. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{namespace_real_time_1_1_communic_ad88676c10d269f29f0ca706e52b99b94}{Leave\+Topic}} (\mbox{\hyperlink{class_real_time_1_1_subscriber}{Subscriber}} $\ast$sub\+Handler)
+\begin{DoxyCompactList}\small\item\em Request to leave the subscribing in a specific topic. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespace_real_time_1_1_communic_a915872fe35ae8dd6110fa778c6e2be89}\label{namespace_real_time_1_1_communic_a915872fe35ae8dd6110fa778c6e2be89}} 
+size\+\_\+t {\bfseries Get\+Valid\+Sub\+ID} (\mbox{\hyperlink{class_real_time_1_1_topic}{Topic}} $\ast$topic)
+\item 
+\mbox{\Hypertarget{namespace_real_time_1_1_communic_a0167c074db8162161d83354b667d1550}\label{namespace_real_time_1_1_communic_a0167c074db8162161d83354b667d1550}} 
+size\+\_\+t {\bfseries Get\+Valid\+Pub\+ID} (\mbox{\hyperlink{class_real_time_1_1_topic}{Topic}} $\ast$topic)
+\item 
+\mbox{\Hypertarget{namespace_real_time_1_1_communic_a4fac0f9af63d56a25b6c0df4e918b022}\label{namespace_real_time_1_1_communic_a4fac0f9af63d56a25b6c0df4e918b022}} 
+void {\bfseries Clear\+All} (void)
+\item 
+\mbox{\Hypertarget{namespace_real_time_1_1_communic_aaa84f8a2d42ee56dc10951e0f164b8ec}\label{namespace_real_time_1_1_communic_aaa84f8a2d42ee56dc10951e0f164b8ec}} 
+\mbox{\hyperlink{class_real_time_1_1_topic}{Topic}} $\ast$ {\bfseries Get\+Topic\+Handler} (size\+\_\+t topic)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Namespace related to the communication subsytem services. 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespace_real_time_1_1_communic_ae319d3b7c66715f5bcb266bbe71cc32b}\label{namespace_real_time_1_1_communic_ae319d3b7c66715f5bcb266bbe71cc32b}} 
+\index{RealTime::Communic@{RealTime::Communic}!Init@{Init}}
+\index{Init@{Init}!RealTime::Communic@{RealTime::Communic}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily int Real\+Time\+::\+Communic\+::\+Init (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Initialize the \mbox{\hyperlink{namespace_real_time_1_1_communic}{Communic}} subsystem parameters and services. 
+
+\begin{DoxyReturn}{Returns}
+-\/ Real\+Time\+::ok if success;
+\begin{DoxyItemize}
+\item Real\+Time\+::fail otherwise. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespace_real_time_1_1_communic_a0917770ab31d11369459725e5957b3b2}\label{namespace_real_time_1_1_communic_a0917770ab31d11369459725e5957b3b2}} 
+\index{RealTime::Communic@{RealTime::Communic}!LeaveTopic@{LeaveTopic}}
+\index{LeaveTopic@{LeaveTopic}!RealTime::Communic@{RealTime::Communic}}
+\doxysubsubsection{\texorpdfstring{LeaveTopic()}{LeaveTopic()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int Real\+Time\+::\+Communic\+::\+Leave\+Topic (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_real_time_1_1_publisher}{Publisher}} $\ast$}]{pub\+Handler }\end{DoxyParamCaption})}
+
+
+
+Request to leave the publishing in a specific topic. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pub\+Handler} & -\/ A valid \mbox{\hyperlink{class_real_time_1_1_publisher}{Publisher}} instance.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/ Real\+Time\+::ok if success;
+\begin{DoxyItemize}
+\item Real\+Time\+::fail otherwise. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespace_real_time_1_1_communic_ad88676c10d269f29f0ca706e52b99b94}\label{namespace_real_time_1_1_communic_ad88676c10d269f29f0ca706e52b99b94}} 
+\index{RealTime::Communic@{RealTime::Communic}!LeaveTopic@{LeaveTopic}}
+\index{LeaveTopic@{LeaveTopic}!RealTime::Communic@{RealTime::Communic}}
+\doxysubsubsection{\texorpdfstring{LeaveTopic()}{LeaveTopic()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int Real\+Time\+::\+Communic\+::\+Leave\+Topic (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_real_time_1_1_subscriber}{Subscriber}} $\ast$}]{sub\+Handler }\end{DoxyParamCaption})}
+
+
+
+Request to leave the subscribing in a specific topic. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pub\+Handler} & -\/ A valid \mbox{\hyperlink{class_real_time_1_1_subscriber}{Subscriber}} instance.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/ Real\+Time\+::ok if success;
+\begin{DoxyItemize}
+\item Real\+Time\+::fail otherwise. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespace_real_time_1_1_communic_af40444728750190df7a0f61b68e03482}\label{namespace_real_time_1_1_communic_af40444728750190df7a0f61b68e03482}} 
+\index{RealTime::Communic@{RealTime::Communic}!PublishingRequest@{PublishingRequest}}
+\index{PublishingRequest@{PublishingRequest}!RealTime::Communic@{RealTime::Communic}}
+\doxysubsubsection{\texorpdfstring{PublishingRequest()}{PublishingRequest()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_real_time_1_1_publisher}{Publisher}} $\ast$ Real\+Time\+::\+Communic\+::\+Publishing\+Request (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{topic,  }\item[{uint64\+\_\+t}]{msg\+Size }\end{DoxyParamCaption})}
+
+
+
+Make a request for publishing in a specific topic. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em topic} & -\/ The topic identifier (a decimal number defined by the user). \\
+\hline
+{\em msg\+Size} & -\/ The size of the message to be expected in this topic.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/ A valid \mbox{\hyperlink{class_real_time_1_1_publisher}{Publisher}} instance if success;
+\begin{DoxyItemize}
+\item N\+U\+LL otherwise. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespace_real_time_1_1_communic_aba09d0af7bd35d6e10cadd00a2c5f6c1}\label{namespace_real_time_1_1_communic_aba09d0af7bd35d6e10cadd00a2c5f6c1}} 
+\index{RealTime::Communic@{RealTime::Communic}!SubscribingRequest@{SubscribingRequest}}
+\index{SubscribingRequest@{SubscribingRequest}!RealTime::Communic@{RealTime::Communic}}
+\doxysubsubsection{\texorpdfstring{SubscribingRequest()}{SubscribingRequest()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_real_time_1_1_subscriber}{Subscriber}} $\ast$ Real\+Time\+::\+Communic\+::\+Subscribing\+Request (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{topic,  }\item[{uint64\+\_\+t}]{msg\+Size }\end{DoxyParamCaption})}
+
+
+
+Make a request for subscribing in a specific topic. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em topic} & -\/ The topic identifier (a decimal number defined by the user). \\
+\hline
+{\em msg\+Size} & -\/ The size of the message to be expected in this topic.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/ A valid \mbox{\hyperlink{class_real_time_1_1_subscriber}{Subscriber}} instance if success;
+\begin{DoxyItemize}
+\item N\+U\+LL otherwise. 
+\end{DoxyItemize}
+\end{DoxyReturn}

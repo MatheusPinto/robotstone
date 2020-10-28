@@ -1,0 +1,109 @@
+\hypertarget{namespace_real_time}{}\doxysection{Real\+Time Namespace Reference}
+\label{namespace_real_time}\index{RealTime@{RealTime}}
+
+
+Namespace related to real-\/time services.  
+
+
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespace_real_time_1_1_communic}{Communic}}
+\begin{DoxyCompactList}\small\item\em Namespace related to the communication subsytem services. \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespace_real_time_1_1_heap}{Heap}}
+\begin{DoxyCompactList}\small\item\em Namespace related to dynamic allocation services. \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespace_real_time_1_1_stdout}{Stdout}}
+\begin{DoxyCompactList}\small\item\em Namespace with services related to standard output for real-\/time tasks.. \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespace_real_time_1_1_timer}{Timer}}
+\begin{DoxyCompactList}\small\item\em Namespace related to timing services. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_real_time_1_1_local_heap}{Local\+Heap}}
+\begin{DoxyCompactList}\small\item\em Class used to share dynamic allocated memory between tasks using a common string identifier. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_real_time_1_1_publisher}{Publisher}}
+\begin{DoxyCompactList}\small\item\em This class represents a publishing link to a specific topic. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_real_time_1_1_signal}{Signal}}
+\begin{DoxyCompactList}\small\item\em Class that provides services to signal tasks that a condition was satisfied. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_real_time_1_1_subscriber}{Subscriber}}
+\begin{DoxyCompactList}\small\item\em This class represents a subscribing link to a specific topic. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_real_time_1_1_task}{Task}}
+\begin{DoxyCompactList}\small\item\em This class encapsulates all services related to the management of a real-\/time task. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_real_time_1_1_topic}{Topic}}
+\begin{DoxyCompactList}\small\item\em This class represents a specific topic. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespace_real_time_a7d83d62fe8af680392a22c478b2c0a2c}\label{namespace_real_time_a7d83d62fe8af680392a22c478b2c0a2c}} 
+typedef uint8\+\_\+t {\bfseries message\+\_\+t}
+\item 
+\mbox{\Hypertarget{namespace_real_time_a7e8d83ce23f4045148a49668b1ab44b5}\label{namespace_real_time_a7e8d83ce23f4045148a49668b1ab44b5}} 
+typedef R\+T\+\_\+\+Q\+U\+E\+UE {\bfseries com\+Queue\+\_\+t}
+\item 
+\mbox{\Hypertarget{namespace_real_time_afbdff714d2619a20f5aab2e5d4707f89}\label{namespace_real_time_afbdff714d2619a20f5aab2e5d4707f89}} 
+typedef R\+T\+\_\+\+M\+U\+T\+EX {\bfseries com\+Mutex\+\_\+t}
+\item 
+\mbox{\Hypertarget{namespace_real_time_aef16dd2b25a5a2122998320129430d43}\label{namespace_real_time_aef16dd2b25a5a2122998320129430d43}} 
+typedef void($\ast$ {\bfseries task\+Code\+\_\+t}) (void $\ast$)
+\item 
+\mbox{\Hypertarget{namespace_real_time_ab997dff1fce2cfdd893ae03bc09852f3}\label{namespace_real_time_ab997dff1fce2cfdd893ae03bc09852f3}} 
+typedef R\+T\+\_\+\+T\+A\+SK {\bfseries task\+Handle\+\_\+t}
+\item 
+typedef R\+T\+I\+ME \mbox{\hyperlink{namespace_real_time_ac9006c9ac8d67144a24c561eb81404de}{time\+Count\+\_\+t}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespace_real_time_ab5ac54dc4a6de759c9eda696a968abd5}{task\+F\+U\+N\+C\+T\+I\+ON}} (Topic\+Task\+Func, args)
+\begin{DoxyCompactList}\small\item\em A generic task code that will have an instance by each topic. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespace_real_time_a2037d3f659c3fc5e80c198726b9fa089}\label{namespace_real_time_a2037d3f659c3fc5e80c198726b9fa089}} 
+void {\bfseries Topic\+Task\+Func} (void $\ast$args)
+\item 
+\mbox{\Hypertarget{namespace_real_time_afc3a53505ac93dd044ea8d0e321e996f}\label{namespace_real_time_afc3a53505ac93dd044ea8d0e321e996f}} 
+void \mbox{\hyperlink{namespace_real_time_afc3a53505ac93dd044ea8d0e321e996f}{Init}} (void)
+\begin{DoxyCompactList}\small\item\em Initialize the system real-\/time parameters. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespace_real_time_a3feae3ef4051199c9dd985138d436e22}\label{namespace_real_time_a3feae3ef4051199c9dd985138d436e22}} 
+int {\bfseries Set\+Exec\+C\+P\+US} (size\+\_\+t cpus)
+\item 
+\mbox{\Hypertarget{namespace_real_time_a1f4f78358268b45a1242095c78d51726}\label{namespace_real_time_a1f4f78358268b45a1242095c78d51726}} 
+size\+\_\+t {\bfseries Get\+Exec\+C\+P\+US} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespace_real_time_a8473d4a80b6d1ce3b26e37a71361a95d}\label{namespace_real_time_a8473d4a80b6d1ce3b26e37a71361a95d}} 
+const int {\bfseries ok} = 0
+\item 
+\mbox{\Hypertarget{namespace_real_time_a8af6868ef5937afb0343e57e22ca03bd}\label{namespace_real_time_a8af6868ef5937afb0343e57e22ca03bd}} 
+const int {\bfseries fail} = 1
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Namespace related to real-\/time services. 
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{namespace_real_time_ac9006c9ac8d67144a24c561eb81404de}\label{namespace_real_time_ac9006c9ac8d67144a24c561eb81404de}} 
+\index{RealTime@{RealTime}!timeCount\_t@{timeCount\_t}}
+\index{timeCount\_t@{timeCount\_t}!RealTime@{RealTime}}
+\doxysubsubsection{\texorpdfstring{timeCount\_t}{timeCount\_t}}
+{\footnotesize\ttfamily typedef R\+T\+I\+ME \mbox{\hyperlink{namespace_real_time_ac9006c9ac8d67144a24c561eb81404de}{Real\+Time\+::time\+Count\+\_\+t}}}
+
+This type corresponds to time values related to the system specific units 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespace_real_time_ab5ac54dc4a6de759c9eda696a968abd5}\label{namespace_real_time_ab5ac54dc4a6de759c9eda696a968abd5}} 
+\index{RealTime@{RealTime}!taskFUNCTION@{taskFUNCTION}}
+\index{taskFUNCTION@{taskFUNCTION}!RealTime@{RealTime}}
+\doxysubsubsection{\texorpdfstring{taskFUNCTION()}{taskFUNCTION()}}
+{\footnotesize\ttfamily Real\+Time\+::task\+F\+U\+N\+C\+T\+I\+ON (\begin{DoxyParamCaption}\item[{Topic\+Task\+Func}]{,  }\item[{args}]{ }\end{DoxyParamCaption})}
+
+
+
+A generic task code that will have an instance by each topic. 
+
+\begin{DoxyVerb}      The tasks related to this function will manage the sending of
+      messages as soon as a message is complete put in its specific
+      topic buffer by a publisher task.
+\end{DoxyVerb}
+ 

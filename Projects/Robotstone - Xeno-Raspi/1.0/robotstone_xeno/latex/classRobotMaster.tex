@@ -1,0 +1,358 @@
+\hypertarget{classRobotMaster}{}\doxysection{Robot\+Master Class Reference}
+\label{classRobotMaster}\index{RobotMaster@{RobotMaster}}
+Inheritance diagram for Robot\+Master\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classRobotMaster}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classRobotMaster_ad0826717300e95356b74993859eb767d}\label{classRobotMaster_ad0826717300e95356b74993859eb767d}} 
+\mbox{\hyperlink{classRobotMaster_ad0826717300e95356b74993859eb767d}{Robot\+Master}} (void)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classRobotMaster}{Robot\+Master}} class constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classRobotMaster_a7ad9cdc3155bdadf7287660dba9f46b8}\label{classRobotMaster_a7ad9cdc3155bdadf7287660dba9f46b8}} 
+void \mbox{\hyperlink{classRobotMaster_a7ad9cdc3155bdadf7287660dba9f46b8}{Start\+Tasks}} (void)
+\begin{DoxyCompactList}\small\item\em Starts the experiment synthetic tasks. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classRobotMaster_a325e58a46ef426ed3cc84a23ede8f728}\label{classRobotMaster_a325e58a46ef426ed3cc84a23ede8f728}} 
+void {\bfseries Finish\+Tasks} (void)
+\item 
+void \mbox{\hyperlink{classRobotMaster_a829262030cd0a44aadf254e502581901}{Request\+Experiment}} (uint8\+\_\+t experiment)
+\begin{DoxyCompactList}\small\item\em This method will unblock the current task (the management task) and will set the experiment requested. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classRobotMaster_a60f2caf03eb29e2cea7c18a23dbb6c31}\label{classRobotMaster_a60f2caf03eb29e2cea7c18a23dbb6c31}} 
+void \mbox{\hyperlink{classRobotMaster_a60f2caf03eb29e2cea7c18a23dbb6c31}{Init\+Experiment}} (void)
+\begin{DoxyCompactList}\small\item\em Initialize the experiment parameters in Master node. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classRobotMaster_a2dab84ad252e4aa108f2e8437f26f7fa}{Start\+Distributed\+Experiment}} (void)
+\begin{DoxyCompactList}\small\item\em Start the experiment related to the processing and communication domain and run until experiment finishes. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classRobotMaster_a15e1e901a04c57905c385d45d40b2fd0}{Start\+Uni\+Experiment}} (void)
+\begin{DoxyCompactList}\small\item\em Start the experiment related to the processing domain and run until experiment finishes. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{classRobotMaster_a16fcfb95732f6f9a12455a5291d9c3a3}{Experiment\+Deadline\+Miss}} (void)
+\begin{DoxyCompactList}\small\item\em Get the number of deadlines missed in the experiment. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classRobotMaster_ac768f1c5f1c89cb4824116ee24d235e0}{Update\+Experiment}} (size\+\_\+t test)
+\begin{DoxyCompactList}\small\item\em Update the actual experiment step test. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classRobotMaster_a0e98b68e1eaaa2560adfe31278b57c98}{Update\+Exp1}} (size\+\_\+t test)
+\begin{DoxyCompactList}\small\item\em Update the actual Experiment 1 step test. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classRobotMaster_a7057b06bd49eb947cae6773a532065e0}{Update\+Exp2}} (size\+\_\+t test)
+\begin{DoxyCompactList}\small\item\em Update the actual Experiment 2 step test. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classRobotMaster_a38dd7ff4e646ed172bd5ca5676d15047}{Update\+Exp3}} (size\+\_\+t test)
+\begin{DoxyCompactList}\small\item\em Update the actual Experiment 3 step test. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classRobotMaster_a8f89cbb17d8e68d2925e45a72311d9ca}{Update\+Exp4}} (size\+\_\+t test)
+\begin{DoxyCompactList}\small\item\em Update the actual Experiment 4 step test. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classRobotMaster_a344e442e17c2f1a721447b90770a7032}{Update\+Exp5}} (size\+\_\+t test)
+\begin{DoxyCompactList}\small\item\em Update the actual Experiment 5 step test. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classRobotMaster_ac2fc7b8c511ace786c24f30093ed6613}{Update\+Exp6}} (size\+\_\+t test)
+\begin{DoxyCompactList}\small\item\em Update the actual Experiment 6 step test. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classRobotMaster_af8d6f7ef54958f617680b0bcd07174b0}{Update\+Exp7}} (size\+\_\+t test)
+\begin{DoxyCompactList}\small\item\em Update the actual Experiment 7 step test. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classRobotMaster_a7c9273808ef001ef6e08e1f95df6dee5}\label{classRobotMaster_a7c9273808ef001ef6e08e1f95df6dee5}} 
+void \mbox{\hyperlink{classRobotMaster_a7c9273808ef001ef6e08e1f95df6dee5}{Calculate\+Deadline\+Miss}} (void)
+\begin{DoxyCompactList}\small\item\em Calculates the deadlines missed number and saves in internal \mbox{\hyperlink{classRobotMaster}{Robot\+Master}} attributes. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classRobotMaster_ab4c9a5d0da7462b7754a706e9a742c70}{Start\+Report}} (size\+\_\+t test)
+\begin{DoxyCompactList}\small\item\em Starts the report of the test step results. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classRobotMaster_acabf08e31e345179c8c8aba6a06c1e47}\label{classRobotMaster_acabf08e31e345179c8c8aba6a06c1e47}} 
+void \mbox{\hyperlink{classRobotMaster_acabf08e31e345179c8c8aba6a06c1e47}{Wait\+Tasks\+Finish}} (void)
+\begin{DoxyCompactList}\small\item\em Wait synthetic tasks to finish, i.\+e., go out its superloops. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classRobotMaster_a903ee03e0652eee5daff331d4d0bbb63}{Send\+Experiment\+Status}} (size\+\_\+t status)
+\begin{DoxyCompactList}\small\item\em Sends the experiment status to the Slave Node. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classRobotMaster_a9c3fdf6bb000e0f16282980af0d3a064}\label{classRobotMaster_a9c3fdf6bb000e0f16282980af0d3a064}} 
+void \mbox{\hyperlink{classRobotMaster_a9c3fdf6bb000e0f16282980af0d3a064}{Set\+Experiment\+Uni\+Baseline}} ()
+\begin{DoxyCompactList}\small\item\em Set all the parameters and configurations to initialize the baseline tasks related to PD experiments. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classRobotMaster_a7e2b9b6ee9cb752041b644c351bdcec9}\label{classRobotMaster_a7e2b9b6ee9cb752041b644c351bdcec9}} 
+void \mbox{\hyperlink{classRobotMaster_a7e2b9b6ee9cb752041b644c351bdcec9}{Set\+Experiment\+Dist\+Baseline}} ()
+\begin{DoxyCompactList}\small\item\em Set all the parameters and configurations to initialize the baseline tasks related to P\+CD experiments. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classRobotMaster_a80b0df37bcecc937034c553e8ae60709}\label{classRobotMaster_a80b0df37bcecc937034c553e8ae60709}} 
+void \mbox{\hyperlink{classRobotMaster_a80b0df37bcecc937034c553e8ae60709}{Man\+Task}} (void)
+\begin{DoxyCompactList}\small\item\em This method is called by the management task function to operate inside the \mbox{\hyperlink{classRobotMaster}{Robot\+Master}} instance. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classRobotMaster_a36b2815499d1ac8139cdc435718d3d78}\label{classRobotMaster_a36b2815499d1ac8139cdc435718d3d78}} 
+void \mbox{\hyperlink{classRobotMaster_a36b2815499d1ac8139cdc435718d3d78}{Wait\+Deadlines\+From\+Slave}} (void)
+\begin{DoxyCompactList}\small\item\em Wait from Slave a Signal with the number of deadlines missed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classRobotMaster_a3fd9ecbbe7eed42ad53920bb454c9afb}{Print\+Report}} (size\+\_\+t test)
+\begin{DoxyCompactList}\small\item\em Prints the report of the test step results. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classRobotMaster_ace3cd6e97ae6d7c77d330cb2a031fc4e}{Print\+Exp\+Uni\+Report}} (size\+\_\+t test)
+\begin{DoxyCompactList}\small\item\em Prints the report of the test step results related to PD experiments. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classRobotMaster_a3caaa0cda378bae5e78b3e86dbc7b452}{Print\+Exp\+Dist\+Report}} (size\+\_\+t test)
+\begin{DoxyCompactList}\small\item\em Prints the report of the test step results related to P\+CD experiments. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classRobotMaster_af75e638a3c5e4675f9549de67d1fb794}\label{classRobotMaster_af75e638a3c5e4675f9549de67d1fb794}} 
+uint32\+\_\+t {\bfseries Total\+Deadline\+Miss} (void)
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classRobotMaster_a5de8959ac119f38657e946a1ff3f5713}{Manage\+Master\+Task}} (void $\ast$args)
+\begin{DoxyCompactList}\small\item\em The entry function of the management task in Master node. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classRobotMaster_a16fcfb95732f6f9a12455a5291d9c3a3}\label{classRobotMaster_a16fcfb95732f6f9a12455a5291d9c3a3}} 
+\index{RobotMaster@{RobotMaster}!ExperimentDeadlineMiss@{ExperimentDeadlineMiss}}
+\index{ExperimentDeadlineMiss@{ExperimentDeadlineMiss}!RobotMaster@{RobotMaster}}
+\doxysubsubsection{\texorpdfstring{ExperimentDeadlineMiss()}{ExperimentDeadlineMiss()}}
+{\footnotesize\ttfamily size\+\_\+t Robot\+Master\+::\+Experiment\+Deadline\+Miss (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Get the number of deadlines missed in the experiment. 
+
+\begin{DoxyReturn}{Returns}
+deadlines number. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classRobotMaster_a3caaa0cda378bae5e78b3e86dbc7b452}\label{classRobotMaster_a3caaa0cda378bae5e78b3e86dbc7b452}} 
+\index{RobotMaster@{RobotMaster}!PrintExpDistReport@{PrintExpDistReport}}
+\index{PrintExpDistReport@{PrintExpDistReport}!RobotMaster@{RobotMaster}}
+\doxysubsubsection{\texorpdfstring{PrintExpDistReport()}{PrintExpDistReport()}}
+{\footnotesize\ttfamily void Robot\+Master\+::\+Print\+Exp\+Dist\+Report (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{test }\end{DoxyParamCaption})}
+
+
+
+Prints the report of the test step results related to P\+CD experiments. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em test} & -\/ test step number. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classRobotMaster_ace3cd6e97ae6d7c77d330cb2a031fc4e}\label{classRobotMaster_ace3cd6e97ae6d7c77d330cb2a031fc4e}} 
+\index{RobotMaster@{RobotMaster}!PrintExpUniReport@{PrintExpUniReport}}
+\index{PrintExpUniReport@{PrintExpUniReport}!RobotMaster@{RobotMaster}}
+\doxysubsubsection{\texorpdfstring{PrintExpUniReport()}{PrintExpUniReport()}}
+{\footnotesize\ttfamily void Robot\+Master\+::\+Print\+Exp\+Uni\+Report (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{test }\end{DoxyParamCaption})}
+
+
+
+Prints the report of the test step results related to PD experiments. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em test} & -\/ test step number. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classRobotMaster_a3fd9ecbbe7eed42ad53920bb454c9afb}\label{classRobotMaster_a3fd9ecbbe7eed42ad53920bb454c9afb}} 
+\index{RobotMaster@{RobotMaster}!PrintReport@{PrintReport}}
+\index{PrintReport@{PrintReport}!RobotMaster@{RobotMaster}}
+\doxysubsubsection{\texorpdfstring{PrintReport()}{PrintReport()}}
+{\footnotesize\ttfamily void Robot\+Master\+::\+Print\+Report (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{test }\end{DoxyParamCaption})}
+
+
+
+Prints the report of the test step results. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em test} & -\/ test step number. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classRobotMaster_a829262030cd0a44aadf254e502581901}\label{classRobotMaster_a829262030cd0a44aadf254e502581901}} 
+\index{RobotMaster@{RobotMaster}!RequestExperiment@{RequestExperiment}}
+\index{RequestExperiment@{RequestExperiment}!RobotMaster@{RobotMaster}}
+\doxysubsubsection{\texorpdfstring{RequestExperiment()}{RequestExperiment()}}
+{\footnotesize\ttfamily void Robot\+Master\+::\+Request\+Experiment (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{experiment }\end{DoxyParamCaption})}
+
+
+
+This method will unblock the current task (the management task) and will set the experiment requested. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em experiment} & -\/ A number from 1 to 7 referring to an experiment. Any other number will calculate the machine raw speed. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classRobotMaster_a903ee03e0652eee5daff331d4d0bbb63}\label{classRobotMaster_a903ee03e0652eee5daff331d4d0bbb63}} 
+\index{RobotMaster@{RobotMaster}!SendExperimentStatus@{SendExperimentStatus}}
+\index{SendExperimentStatus@{SendExperimentStatus}!RobotMaster@{RobotMaster}}
+\doxysubsubsection{\texorpdfstring{SendExperimentStatus()}{SendExperimentStatus()}}
+{\footnotesize\ttfamily void Robot\+Master\+::\+Send\+Experiment\+Status (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{status }\end{DoxyParamCaption})}
+
+
+
+Sends the experiment status to the Slave Node. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em status} & -\/
+\begin{DoxyItemize}
+\item {\itshape is\+Finshed} indicates that experiment must be finished
+\item {\itshape is\+Run} indicates that experiment is ready to run in Master side. 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classRobotMaster_a2dab84ad252e4aa108f2e8437f26f7fa}\label{classRobotMaster_a2dab84ad252e4aa108f2e8437f26f7fa}} 
+\index{RobotMaster@{RobotMaster}!StartDistributedExperiment@{StartDistributedExperiment}}
+\index{StartDistributedExperiment@{StartDistributedExperiment}!RobotMaster@{RobotMaster}}
+\doxysubsubsection{\texorpdfstring{StartDistributedExperiment()}{StartDistributedExperiment()}}
+{\footnotesize\ttfamily void Robot\+Master\+::\+Start\+Distributed\+Experiment (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Start the experiment related to the processing and communication domain and run until experiment finishes. 
+
+After experiment initialization, this function will be the management task superloop, that will start the synthetic tasks, get their experiment results and re-\/run then case necessary or finish the experiment in Slave node. \mbox{\Hypertarget{classRobotMaster_ab4c9a5d0da7462b7754a706e9a742c70}\label{classRobotMaster_ab4c9a5d0da7462b7754a706e9a742c70}} 
+\index{RobotMaster@{RobotMaster}!StartReport@{StartReport}}
+\index{StartReport@{StartReport}!RobotMaster@{RobotMaster}}
+\doxysubsubsection{\texorpdfstring{StartReport()}{StartReport()}}
+{\footnotesize\ttfamily void Robot\+Master\+::\+Start\+Report (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{test }\end{DoxyParamCaption})}
+
+
+
+Starts the report of the test step results. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em test} & -\/ test step number. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classRobotMaster_a15e1e901a04c57905c385d45d40b2fd0}\label{classRobotMaster_a15e1e901a04c57905c385d45d40b2fd0}} 
+\index{RobotMaster@{RobotMaster}!StartUniExperiment@{StartUniExperiment}}
+\index{StartUniExperiment@{StartUniExperiment}!RobotMaster@{RobotMaster}}
+\doxysubsubsection{\texorpdfstring{StartUniExperiment()}{StartUniExperiment()}}
+{\footnotesize\ttfamily void Robot\+Master\+::\+Start\+Uni\+Experiment (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Start the experiment related to the processing domain and run until experiment finishes. 
+
+After experiment initialization, this function will be the management task superloop, that will start the synthetic tasks, get their experiment results and re-\/run then case necessary or finish the experiment in Slave node. \mbox{\Hypertarget{classRobotMaster_a0e98b68e1eaaa2560adfe31278b57c98}\label{classRobotMaster_a0e98b68e1eaaa2560adfe31278b57c98}} 
+\index{RobotMaster@{RobotMaster}!UpdateExp1@{UpdateExp1}}
+\index{UpdateExp1@{UpdateExp1}!RobotMaster@{RobotMaster}}
+\doxysubsubsection{\texorpdfstring{UpdateExp1()}{UpdateExp1()}}
+{\footnotesize\ttfamily void Robot\+Master\+::\+Update\+Exp1 (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{test }\end{DoxyParamCaption})}
+
+
+
+Update the actual Experiment 1 step test. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em test} & -\/ test step number. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classRobotMaster_a7057b06bd49eb947cae6773a532065e0}\label{classRobotMaster_a7057b06bd49eb947cae6773a532065e0}} 
+\index{RobotMaster@{RobotMaster}!UpdateExp2@{UpdateExp2}}
+\index{UpdateExp2@{UpdateExp2}!RobotMaster@{RobotMaster}}
+\doxysubsubsection{\texorpdfstring{UpdateExp2()}{UpdateExp2()}}
+{\footnotesize\ttfamily void Robot\+Master\+::\+Update\+Exp2 (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{test }\end{DoxyParamCaption})}
+
+
+
+Update the actual Experiment 2 step test. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em test} & -\/ test step number. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classRobotMaster_a38dd7ff4e646ed172bd5ca5676d15047}\label{classRobotMaster_a38dd7ff4e646ed172bd5ca5676d15047}} 
+\index{RobotMaster@{RobotMaster}!UpdateExp3@{UpdateExp3}}
+\index{UpdateExp3@{UpdateExp3}!RobotMaster@{RobotMaster}}
+\doxysubsubsection{\texorpdfstring{UpdateExp3()}{UpdateExp3()}}
+{\footnotesize\ttfamily void Robot\+Master\+::\+Update\+Exp3 (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{test }\end{DoxyParamCaption})}
+
+
+
+Update the actual Experiment 3 step test. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em test} & -\/ test step number. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classRobotMaster_a8f89cbb17d8e68d2925e45a72311d9ca}\label{classRobotMaster_a8f89cbb17d8e68d2925e45a72311d9ca}} 
+\index{RobotMaster@{RobotMaster}!UpdateExp4@{UpdateExp4}}
+\index{UpdateExp4@{UpdateExp4}!RobotMaster@{RobotMaster}}
+\doxysubsubsection{\texorpdfstring{UpdateExp4()}{UpdateExp4()}}
+{\footnotesize\ttfamily void Robot\+Master\+::\+Update\+Exp4 (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{test }\end{DoxyParamCaption})}
+
+
+
+Update the actual Experiment 4 step test. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em test} & -\/ test step number. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classRobotMaster_a344e442e17c2f1a721447b90770a7032}\label{classRobotMaster_a344e442e17c2f1a721447b90770a7032}} 
+\index{RobotMaster@{RobotMaster}!UpdateExp5@{UpdateExp5}}
+\index{UpdateExp5@{UpdateExp5}!RobotMaster@{RobotMaster}}
+\doxysubsubsection{\texorpdfstring{UpdateExp5()}{UpdateExp5()}}
+{\footnotesize\ttfamily void Robot\+Master\+::\+Update\+Exp5 (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{test }\end{DoxyParamCaption})}
+
+
+
+Update the actual Experiment 5 step test. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em test} & -\/ test step number. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classRobotMaster_ac2fc7b8c511ace786c24f30093ed6613}\label{classRobotMaster_ac2fc7b8c511ace786c24f30093ed6613}} 
+\index{RobotMaster@{RobotMaster}!UpdateExp6@{UpdateExp6}}
+\index{UpdateExp6@{UpdateExp6}!RobotMaster@{RobotMaster}}
+\doxysubsubsection{\texorpdfstring{UpdateExp6()}{UpdateExp6()}}
+{\footnotesize\ttfamily void Robot\+Master\+::\+Update\+Exp6 (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{test }\end{DoxyParamCaption})}
+
+
+
+Update the actual Experiment 6 step test. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em test} & -\/ test step number. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classRobotMaster_af8d6f7ef54958f617680b0bcd07174b0}\label{classRobotMaster_af8d6f7ef54958f617680b0bcd07174b0}} 
+\index{RobotMaster@{RobotMaster}!UpdateExp7@{UpdateExp7}}
+\index{UpdateExp7@{UpdateExp7}!RobotMaster@{RobotMaster}}
+\doxysubsubsection{\texorpdfstring{UpdateExp7()}{UpdateExp7()}}
+{\footnotesize\ttfamily void Robot\+Master\+::\+Update\+Exp7 (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{test }\end{DoxyParamCaption})}
+
+
+
+Update the actual Experiment 7 step test. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em test} & -\/ test step number. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classRobotMaster_ac768f1c5f1c89cb4824116ee24d235e0}\label{classRobotMaster_ac768f1c5f1c89cb4824116ee24d235e0}} 
+\index{RobotMaster@{RobotMaster}!UpdateExperiment@{UpdateExperiment}}
+\index{UpdateExperiment@{UpdateExperiment}!RobotMaster@{RobotMaster}}
+\doxysubsubsection{\texorpdfstring{UpdateExperiment()}{UpdateExperiment()}}
+{\footnotesize\ttfamily void Robot\+Master\+::\+Update\+Experiment (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{test }\end{DoxyParamCaption})}
+
+
+
+Update the actual experiment step test. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em test} & -\/ test step number. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classRobotMaster_a5de8959ac119f38657e946a1ff3f5713}\label{classRobotMaster_a5de8959ac119f38657e946a1ff3f5713}} 
+\index{RobotMaster@{RobotMaster}!ManageMasterTask@{ManageMasterTask}}
+\index{ManageMasterTask@{ManageMasterTask}!RobotMaster@{RobotMaster}}
+\doxysubsubsection{\texorpdfstring{ManageMasterTask}{ManageMasterTask}}
+{\footnotesize\ttfamily void Manage\+Master\+Task (\begin{DoxyParamCaption}\item[{void $\ast$}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+The entry function of the management task in Master node. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em args} & -\/ Arguments pointer passed to the management task. This will be the pointer of the \mbox{\hyperlink{classRobotMaster}{Robot\+Master}} object. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{RobotMaster_8hpp}{Robot\+Master.\+hpp}}\item 
+\mbox{\hyperlink{RobotMaster_8cpp}{Robot\+Master.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,173 @@
+\hypertarget{class_real_time_1_1_subscriber}{}\doxysection{Real\+Time\+::Subscriber Class Reference}
+\label{class_real_time_1_1_subscriber}\index{RealTime::Subscriber@{RealTime::Subscriber}}
+
+
+This class represents a subscribing link to a specific topic.  
+
+
+
+
+{\ttfamily \#include $<$communic.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_real_time_1_1_subscriber_a0552c729800dd5865fed4045fe0dab50}{Subscriber}} (size\+\_\+t id, size\+\_\+t topic, size\+\_\+t msg\+Size)
+\begin{DoxyCompactList}\small\item\em The \mbox{\hyperlink{class_real_time_1_1_subscriber}{Subscriber}} class constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_real_time_1_1_subscriber_ab90f7b5149fcc93b8e9079db905970b2}\label{class_real_time_1_1_subscriber_ab90f7b5149fcc93b8e9079db905970b2}} 
+\mbox{\hyperlink{class_real_time_1_1_subscriber_ab90f7b5149fcc93b8e9079db905970b2}{$\sim$\+Subscriber}} (void)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_real_time_1_1_subscriber}{Subscriber}} class destructor. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_real_time_1_1_subscriber_a260072d2109186c29c79867d6d760cf7}{Init}} (void)
+\begin{DoxyCompactList}\small\item\em Initialize the \mbox{\hyperlink{class_real_time_1_1_subscriber}{Subscriber}} instance parameters. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{class_real_time_1_1_subscriber_a040608035b97ab630b8b91010d428f1e}{Get\+Topic}} (void)
+\begin{DoxyCompactList}\small\item\em Get the topic identifier of the subscriber. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{class_real_time_1_1_subscriber_a42a0725d9b61e235454d7ac08480393f}{Get\+ID}} ()
+\begin{DoxyCompactList}\small\item\em Get the subscriber identifier. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{class_real_time_1_1_subscriber_a12e8d7060b69611207507261b1c0d088}{Get\+Message\+Size}} (void)
+\begin{DoxyCompactList}\small\item\em Get the message size related to the subscribed topic. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{class_real_time_1_1_subscriber_a98ce954ec79ef1f732038044471afd94}{Receive}} (void $\ast$msg)
+\begin{DoxyCompactList}\small\item\em Wait to receive a message in the subscribed topic. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{class_real_time_1_1_subscriber_a370eb6c86ab97cae223ab4357fe44061}{Put\+Message}} (void $\ast$msg)
+\begin{DoxyCompactList}\small\item\em This method is called by the topic gatekeeper task to put a copy of the last message sent to the topic in the subscriber buffer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_real_time_1_1_subscriber_aab9dde298244107f6cb7d5967eedc6e3}\label{class_real_time_1_1_subscriber_aab9dde298244107f6cb7d5967eedc6e3}} 
+bool {\bfseries operator==} (\mbox{\hyperlink{class_real_time_1_1_subscriber}{Subscriber}} \&other)
+\item 
+\mbox{\Hypertarget{class_real_time_1_1_subscriber_aff776f11b84a5fa85e96ef71ce034bac}\label{class_real_time_1_1_subscriber_aff776f11b84a5fa85e96ef71ce034bac}} 
+bool {\bfseries operator==} (size\+\_\+t id)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class represents a subscribing link to a specific topic. 
+
+\begin{DoxyVerb}      The task that wants to subscribing in a topic, must instantiate
+      this class and use it as the link to the topic.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_real_time_1_1_subscriber_a0552c729800dd5865fed4045fe0dab50}\label{class_real_time_1_1_subscriber_a0552c729800dd5865fed4045fe0dab50}} 
+\index{RealTime::Subscriber@{RealTime::Subscriber}!Subscriber@{Subscriber}}
+\index{Subscriber@{Subscriber}!RealTime::Subscriber@{RealTime::Subscriber}}
+\doxysubsubsection{\texorpdfstring{Subscriber()}{Subscriber()}}
+{\footnotesize\ttfamily Real\+Time\+::\+Subscriber\+::\+Subscriber (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{id,  }\item[{size\+\_\+t}]{topic,  }\item[{size\+\_\+t}]{msg\+Size }\end{DoxyParamCaption})}
+
+
+
+The \mbox{\hyperlink{class_real_time_1_1_subscriber}{Subscriber}} class constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & -\/ A subscriber unique identifier (it is attributed automatically by \mbox{\hyperlink{namespace_real_time_1_1_communic}{Communic}} system). \\
+\hline
+{\em topic} & -\/ The topic identifier. \\
+\hline
+{\em topic} & -\/ The size of the messages in the requested topic. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_real_time_1_1_subscriber_a42a0725d9b61e235454d7ac08480393f}\label{class_real_time_1_1_subscriber_a42a0725d9b61e235454d7ac08480393f}} 
+\index{RealTime::Subscriber@{RealTime::Subscriber}!GetID@{GetID}}
+\index{GetID@{GetID}!RealTime::Subscriber@{RealTime::Subscriber}}
+\doxysubsubsection{\texorpdfstring{GetID()}{GetID()}}
+{\footnotesize\ttfamily size\+\_\+t Real\+Time\+::\+Subscriber\+::\+Get\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the subscriber identifier. 
+
+\begin{DoxyReturn}{Returns}
+subscriber identifier. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_real_time_1_1_subscriber_a12e8d7060b69611207507261b1c0d088}\label{class_real_time_1_1_subscriber_a12e8d7060b69611207507261b1c0d088}} 
+\index{RealTime::Subscriber@{RealTime::Subscriber}!GetMessageSize@{GetMessageSize}}
+\index{GetMessageSize@{GetMessageSize}!RealTime::Subscriber@{RealTime::Subscriber}}
+\doxysubsubsection{\texorpdfstring{GetMessageSize()}{GetMessageSize()}}
+{\footnotesize\ttfamily size\+\_\+t Real\+Time\+::\+Subscriber\+::\+Get\+Message\+Size (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Get the message size related to the subscribed topic. 
+
+\begin{DoxyReturn}{Returns}
+The message size in bytes. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_real_time_1_1_subscriber_a040608035b97ab630b8b91010d428f1e}\label{class_real_time_1_1_subscriber_a040608035b97ab630b8b91010d428f1e}} 
+\index{RealTime::Subscriber@{RealTime::Subscriber}!GetTopic@{GetTopic}}
+\index{GetTopic@{GetTopic}!RealTime::Subscriber@{RealTime::Subscriber}}
+\doxysubsubsection{\texorpdfstring{GetTopic()}{GetTopic()}}
+{\footnotesize\ttfamily size\+\_\+t Real\+Time\+::\+Subscriber\+::\+Get\+Topic (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Get the topic identifier of the subscriber. 
+
+\begin{DoxyReturn}{Returns}
+The topic identifier. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_real_time_1_1_subscriber_a260072d2109186c29c79867d6d760cf7}\label{class_real_time_1_1_subscriber_a260072d2109186c29c79867d6d760cf7}} 
+\index{RealTime::Subscriber@{RealTime::Subscriber}!Init@{Init}}
+\index{Init@{Init}!RealTime::Subscriber@{RealTime::Subscriber}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily int Real\+Time\+::\+Subscriber\+::\+Init (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Initialize the \mbox{\hyperlink{class_real_time_1_1_subscriber}{Subscriber}} instance parameters. 
+
+\begin{DoxyReturn}{Returns}
+-\/ Real\+Time\+::ok if success;
+\begin{DoxyItemize}
+\item Real\+Time\+::fail otherwise. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_real_time_1_1_subscriber_a370eb6c86ab97cae223ab4357fe44061}\label{class_real_time_1_1_subscriber_a370eb6c86ab97cae223ab4357fe44061}} 
+\index{RealTime::Subscriber@{RealTime::Subscriber}!PutMessage@{PutMessage}}
+\index{PutMessage@{PutMessage}!RealTime::Subscriber@{RealTime::Subscriber}}
+\doxysubsubsection{\texorpdfstring{PutMessage()}{PutMessage()}}
+{\footnotesize\ttfamily size\+\_\+t Real\+Time\+::\+Subscriber\+::\+Put\+Message (\begin{DoxyParamCaption}\item[{void $\ast$}]{msg }\end{DoxyParamCaption})}
+
+
+
+This method is called by the topic gatekeeper task to put a copy of the last message sent to the topic in the subscriber buffer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em msg} & -\/ A pointer to a buffer with the copy of the message.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 -\/ if success; 0 -\/ otherwise; 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_real_time_1_1_subscriber_a98ce954ec79ef1f732038044471afd94}\label{class_real_time_1_1_subscriber_a98ce954ec79ef1f732038044471afd94}} 
+\index{RealTime::Subscriber@{RealTime::Subscriber}!Receive@{Receive}}
+\index{Receive@{Receive}!RealTime::Subscriber@{RealTime::Subscriber}}
+\doxysubsubsection{\texorpdfstring{Receive()}{Receive()}}
+{\footnotesize\ttfamily size\+\_\+t Real\+Time\+::\+Subscriber\+::\+Receive (\begin{DoxyParamCaption}\item[{void $\ast$}]{msg }\end{DoxyParamCaption})}
+
+
+
+Wait to receive a message in the subscribed topic. 
+
+\begin{DoxyVerb}      While a message doesn't arrives, the caller task
+      will be suspended. When a complete message arrives,
+      then the task will exit this method.
+\end{DoxyVerb}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em msg} & -\/ A pointer to a valid buffer at least the size of the message.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 -\/ if success; 0 -\/ otherwise; 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+communic.\+hpp\item 
+\mbox{\hyperlink{communic_8cpp}{communic.\+cpp}}\end{DoxyCompactItemize}

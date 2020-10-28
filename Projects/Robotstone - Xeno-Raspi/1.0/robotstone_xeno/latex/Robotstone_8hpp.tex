@@ -1,0 +1,57 @@
+\hypertarget{Robotstone_8hpp}{}\doxysection{Robotstone.\+hpp File Reference}
+\label{Robotstone_8hpp}\index{Robotstone.hpp@{Robotstone.hpp}}
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}task.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}realtime.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}communic.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Robot\+Task.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}whetstone.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}stdout.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}signal.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}rtheap.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}test\+\_\+led.\+hpp\char`\"{}}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structworstCaseScenario__t}{worst\+Case\+Scenario\+\_\+t}}
+\item 
+class \mbox{\hyperlink{classRobotstone}{Robotstone}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{Robotstone_8hpp_a0e4cf0cac2bac0ed8856d3421bdd50ed}\label{Robotstone_8hpp_a0e4cf0cac2bac0ed8856d3421bdd50ed}} 
+\#define {\bfseries robot\+R\+T\+\_\+\+N\+A\+ME}~\char`\"{}Xenomai 3.\+0.\+8 on Raspbian Linux 4.\+9.\+80 Debian 9 stretch\char`\"{}
+\item 
+\mbox{\Hypertarget{Robotstone_8hpp_a1c738b3d28f50028f768aede7efe0455}\label{Robotstone_8hpp_a1c738b3d28f50028f768aede7efe0455}} 
+\#define {\bfseries robot\+E\+X\+T\+R\+A\+\_\+\+V\+I\+S\+U\+A\+L\+I\+Z\+A\+T\+I\+ON}
+\item 
+\mbox{\Hypertarget{Robotstone_8hpp_aa25e8f62e2717f2c480d5f60a94bffe4}\label{Robotstone_8hpp_aa25e8f62e2717f2c480d5f60a94bffe4}} 
+\#define {\bfseries R\+A\+W\+\_\+\+S\+P\+E\+ED}~413500
+\item 
+\mbox{\Hypertarget{Robotstone_8hpp_a84f15cbcac0cd02bd604eb0e7b96528f}\label{Robotstone_8hpp_a84f15cbcac0cd02bd604eb0e7b96528f}} 
+\#define {\bfseries rstone\+E\+X\+P5\+\_\+\+U\+P\+D\+A\+T\+E\+\_\+\+V\+A\+L\+UE}(test)~pow(2,test+1)
+\item 
+\mbox{\Hypertarget{Robotstone_8hpp_a9370e081e481f2abd9171a797980c344}\label{Robotstone_8hpp_a9370e081e481f2abd9171a797980c344}} 
+\#define {\bfseries rstone\+E\+X\+P6\+\_\+\+U\+P\+D\+A\+T\+E\+\_\+\+V\+A\+L\+UE}(test,  i)~dist\+Baseline\+Frequency\mbox{[}i\mbox{]}$\ast$(1 + ((double)test)$\ast$0.\+1)
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{Robotstone_8hpp_ad28d63a40dd567f9c44bbd45236e3aa5}\label{Robotstone_8hpp_ad28d63a40dd567f9c44bbd45236e3aa5}} 
+size\+\_\+t {\bfseries pow2} (size\+\_\+t value)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Matheus Leitzke Pinto \href{mailto:matheus.pinto@ifsc.edu.br}{\texttt{ matheus.\+pinto@ifsc.\+edu.\+br}} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0
+\end{DoxyVersion}
+\hypertarget{RobotTask_8hpp_LICENSE}{}\doxysubsection{L\+I\+C\+E\+N\+SE}\label{RobotTask_8hpp_LICENSE}
+This program is free software; you can redistribute it and/or modify it under the terms of the G\+NU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but W\+I\+T\+H\+O\+UT A\+NY W\+A\+R\+R\+A\+N\+TY; without even the implied warranty of M\+E\+R\+C\+H\+A\+N\+T\+A\+B\+I\+L\+I\+TY or F\+I\+T\+N\+E\+SS F\+OR A P\+A\+R\+T\+I\+C\+U\+L\+AR P\+U\+R\+P\+O\+SE. See the G\+NU General Public License for more details at \href{http://www.gnu.org/copyleft/gpl.html}{\texttt{ http\+://www.\+gnu.\+org/copyleft/gpl.\+html}}\hypertarget{RobotTask_8hpp_DESCRIPTION}{}\doxysubsection{D\+E\+S\+C\+R\+I\+P\+T\+I\+ON}\label{RobotTask_8hpp_DESCRIPTION}
+This module contains the implementation of the \mbox{\hyperlink{classRobotstone}{Robotstone}} high-\/level class, which will be inherited from more specific classes for the Master and Slave node. 

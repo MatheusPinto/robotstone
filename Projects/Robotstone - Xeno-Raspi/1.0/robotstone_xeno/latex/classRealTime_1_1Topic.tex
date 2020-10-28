@@ -1,0 +1,71 @@
+\hypertarget{classRealTime_1_1Topic}{}\doxysection{Real\+Time\+::Topic Class Reference}
+\label{classRealTime_1_1Topic}\index{RealTime::Topic@{RealTime::Topic}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classRealTime_1_1Topic_a0381dd65d1948408b4ebbd945433058f}\label{classRealTime_1_1Topic_a0381dd65d1948408b4ebbd945433058f}} 
+{\bfseries Topic} (uint8\+\_\+t topic, size\+\_\+t message\+Size)
+\item 
+\mbox{\Hypertarget{classRealTime_1_1Topic_a9a5cab84f836bbd72c576ba8ebd6fdac}\label{classRealTime_1_1Topic_a9a5cab84f836bbd72c576ba8ebd6fdac}} 
+int {\bfseries Init} ()
+\item 
+\mbox{\Hypertarget{classRealTime_1_1Topic_a0f00b7fddbdfe3df96a15f4f0dc3ad9a}\label{classRealTime_1_1Topic_a0f00b7fddbdfe3df96a15f4f0dc3ad9a}} 
+size\+\_\+t {\bfseries Get\+Topic\+ID} (void)
+\item 
+\mbox{\Hypertarget{classRealTime_1_1Topic_aa9f88d48ed1035f2a0268223a9afce8a}\label{classRealTime_1_1Topic_aa9f88d48ed1035f2a0268223a9afce8a}} 
+size\+\_\+t {\bfseries Add\+Subscriber} (\mbox{\hyperlink{classRealTime_1_1Subscriber}{Subscriber}} $\ast$sub)
+\item 
+\mbox{\Hypertarget{classRealTime_1_1Topic_aab2fec05afa137084133b9157466a856}\label{classRealTime_1_1Topic_aab2fec05afa137084133b9157466a856}} 
+size\+\_\+t {\bfseries Add\+Publisher} (\mbox{\hyperlink{classRealTime_1_1Publisher}{Publisher}} $\ast$pub)
+\item 
+\mbox{\Hypertarget{classRealTime_1_1Topic_ae9722bcafe59957b7e454f77401447d5}\label{classRealTime_1_1Topic_ae9722bcafe59957b7e454f77401447d5}} 
+size\+\_\+t {\bfseries Remove\+Subscriber} (\mbox{\hyperlink{classRealTime_1_1Subscriber}{Subscriber}} $\ast$sub)
+\item 
+\mbox{\Hypertarget{classRealTime_1_1Topic_ada88cf43cddfb9c11ce39b2f7633058d}\label{classRealTime_1_1Topic_ada88cf43cddfb9c11ce39b2f7633058d}} 
+size\+\_\+t {\bfseries Remove\+Publisher} (\mbox{\hyperlink{classRealTime_1_1Publisher}{Publisher}} $\ast$pub)
+\item 
+\mbox{\Hypertarget{classRealTime_1_1Topic_a120396098acd456077ce1cc4788afcd0}\label{classRealTime_1_1Topic_a120396098acd456077ce1cc4788afcd0}} 
+\mbox{\hyperlink{classRealTime_1_1Task}{Task}} $\ast$ {\bfseries Get\+Task} (void)
+\item 
+\mbox{\Hypertarget{classRealTime_1_1Topic_abe59c23f40255a794b2002b805d38f07}\label{classRealTime_1_1Topic_abe59c23f40255a794b2002b805d38f07}} 
+size\+\_\+t {\bfseries Get\+Objects\+Num\+Global} (void)
+\item 
+\mbox{\Hypertarget{classRealTime_1_1Topic_ac987b4d745af3fbc7fd288713745a480}\label{classRealTime_1_1Topic_ac987b4d745af3fbc7fd288713745a480}} 
+size\+\_\+t {\bfseries Get\+Objects\+Num\+Local} (void)
+\item 
+\mbox{\Hypertarget{classRealTime_1_1Topic_ab04b873373ebb188ea4a23a9791af125}\label{classRealTime_1_1Topic_ab04b873373ebb188ea4a23a9791af125}} 
+message\+\_\+t $\ast$ {\bfseries Get\+From\+Queue} (void)
+\item 
+\mbox{\Hypertarget{classRealTime_1_1Topic_a492e9bd60e919d9e6943da08324241af}\label{classRealTime_1_1Topic_a492e9bd60e919d9e6943da08324241af}} 
+void {\bfseries Release\+Queue} (message\+\_\+t $\ast$queue\+Pointer)
+\item 
+\mbox{\Hypertarget{classRealTime_1_1Topic_ae373c3e4f65c1e32efe4e2ef1f0ffe73}\label{classRealTime_1_1Topic_ae373c3e4f65c1e32efe4e2ef1f0ffe73}} 
+com\+Queue\+\_\+t $\ast$ {\bfseries Get\+Queue} (void)
+\item 
+\mbox{\Hypertarget{classRealTime_1_1Topic_a3f92aea8e7cd2526bc09952318bdd2b3}\label{classRealTime_1_1Topic_a3f92aea8e7cd2526bc09952318bdd2b3}} 
+com\+Mutex\+\_\+t $\ast$ {\bfseries Get\+Mutex} (void)
+\item 
+\mbox{\Hypertarget{classRealTime_1_1Topic_a327ef193702e5cbda6ab68d5efbdc597}\label{classRealTime_1_1Topic_a327ef193702e5cbda6ab68d5efbdc597}} 
+bool {\bfseries operator==} (\mbox{\hyperlink{classRealTime_1_1Topic}{Topic}} \&other)
+\item 
+\mbox{\Hypertarget{classRealTime_1_1Topic_a348c86236bf1c5c347c7c1bd18ed8099}\label{classRealTime_1_1Topic_a348c86236bf1c5c347c7c1bd18ed8099}} 
+bool {\bfseries operator==} (size\+\_\+t topic\+ID)
+\item 
+\mbox{\Hypertarget{classRealTime_1_1Topic_a498c0edb6b3dc9b840c9d17c988affdf}\label{classRealTime_1_1Topic_a498c0edb6b3dc9b840c9d17c988affdf}} 
+bool {\bfseries Has\+Sub\+ID} (size\+\_\+t id)
+\item 
+\mbox{\Hypertarget{classRealTime_1_1Topic_a11d58b61faffeaf1a78ca0ebbe0e50df}\label{classRealTime_1_1Topic_a11d58b61faffeaf1a78ca0ebbe0e50df}} 
+bool {\bfseries Has\+Pub\+ID} (size\+\_\+t id)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classRealTime_1_1Topic_ab43100463f29277e55366bcb9aacb36f}\label{classRealTime_1_1Topic_ab43100463f29277e55366bcb9aacb36f}} 
+\mbox{\hyperlink{classRealTime_1_1Task}{Task}} $\ast$ {\bfseries topic\+Task}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+communic.\+hpp\item 
+communic.\+cpp\end{DoxyCompactItemize}

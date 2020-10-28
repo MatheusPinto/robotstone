@@ -1,0 +1,60 @@
+\hypertarget{namespace_real_time_1_1_heap}{}\doxysection{Real\+Time\+::Heap Namespace Reference}
+\label{namespace_real_time_1_1_heap}\index{RealTime::Heap@{RealTime::Heap}}
+
+
+Namespace related to dynamic allocation services.  
+
+
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespace_real_time_1_1_heap_ae2b61885b317b8bfdcc936ae91c4ca48}\label{namespace_real_time_1_1_heap_ae2b61885b317b8bfdcc936ae91c4ca48}} 
+void \mbox{\hyperlink{namespace_real_time_1_1_heap_ae2b61885b317b8bfdcc936ae91c4ca48}{Init\+Global}} (void)
+\begin{DoxyCompactList}\small\item\em Initialized the system global parameters for system allocation. \end{DoxyCompactList}\item 
+void $\ast$ \mbox{\hyperlink{namespace_real_time_1_1_heap_a41d51a31676c2e4a190e275a8f7e019e}{Alloc}} (size\+\_\+t size)
+\begin{DoxyCompactList}\small\item\em Allocates a memory region dynamically. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespace_real_time_1_1_heap_a1e4666f09b6a5ade633d434d1134f35b}{Free}} (void $\ast$block)
+\begin{DoxyCompactList}\small\item\em Free the memory region previously allocated. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Namespace related to dynamic allocation services. 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespace_real_time_1_1_heap_a41d51a31676c2e4a190e275a8f7e019e}\label{namespace_real_time_1_1_heap_a41d51a31676c2e4a190e275a8f7e019e}} 
+\index{RealTime::Heap@{RealTime::Heap}!Alloc@{Alloc}}
+\index{Alloc@{Alloc}!RealTime::Heap@{RealTime::Heap}}
+\doxysubsubsection{\texorpdfstring{Alloc()}{Alloc()}}
+{\footnotesize\ttfamily void $\ast$ Real\+Time\+::\+Heap\+::\+Alloc (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{size }\end{DoxyParamCaption})}
+
+
+
+Allocates a memory region dynamically. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & -\/ The memory block size.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item A pointer to the allocated block memory if success;
+\item N\+U\+LL otherwise. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespace_real_time_1_1_heap_a1e4666f09b6a5ade633d434d1134f35b}\label{namespace_real_time_1_1_heap_a1e4666f09b6a5ade633d434d1134f35b}} 
+\index{RealTime::Heap@{RealTime::Heap}!Free@{Free}}
+\index{Free@{Free}!RealTime::Heap@{RealTime::Heap}}
+\doxysubsubsection{\texorpdfstring{Free()}{Free()}}
+{\footnotesize\ttfamily void Real\+Time\+::\+Heap\+::\+Free (\begin{DoxyParamCaption}\item[{void $\ast$}]{block }\end{DoxyParamCaption})}
+
+
+
+Free the memory region previously allocated. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em block} & -\/ The pointer of the previously allocated block memory. \\
+\hline
+\end{DoxyParams}

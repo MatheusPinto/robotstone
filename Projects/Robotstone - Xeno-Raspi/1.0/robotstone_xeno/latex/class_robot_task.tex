@@ -1,0 +1,493 @@
+\hypertarget{class_robot_task}{}\doxysection{Robot\+Task Class Reference}
+\label{class_robot_task}\index{RobotTask@{RobotTask}}
+
+
+This class encapsulates the synthetic tasks functionalities.  
+
+
+
+
+{\ttfamily \#include $<$Robot\+Task.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_robot_task_a80a8cd2c4cf513b11165a7d432aa5b3f}\label{class_robot_task_a80a8cd2c4cf513b11165a7d432aa5b3f}} 
+\mbox{\hyperlink{class_robot_task_a80a8cd2c4cf513b11165a7d432aa5b3f}{Robot\+Task}} (size\+\_\+t id, size\+\_\+t priority, \mbox{\hyperlink{class_real_time_1_1_signal}{Real\+Time\+::\+Signal}} $\ast$signal, uint8\+\_\+t $\ast$stop\+Condition, \mbox{\hyperlink{namespace_real_time_ac9006c9ac8d67144a24c561eb81404de}{Real\+Time\+::time\+Count\+\_\+t}} $\ast$init\+Time, const char $\ast$name)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_robot_task}{Robot\+Task}} class constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_robot_task_a770054c97e6bb34599d7ce7bf151ae2e}\label{class_robot_task_a770054c97e6bb34599d7ce7bf151ae2e}} 
+\mbox{\hyperlink{class_robot_task_a770054c97e6bb34599d7ce7bf151ae2e}{$\sim$\+Robot\+Task}} (void)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_robot_task}{Robot\+Task}} class destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_robot_task_a998edf7e061ccc7e91c6c5d247b30ca9}{Set\+Frequency}} (double frequency)
+\begin{DoxyCompactList}\small\item\em Set the task activation frequency. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_robot_task_a974ac732a330f3c09035074beb7e2815}{Set\+Period}} (\mbox{\hyperlink{namespace_real_time_ac9006c9ac8d67144a24c561eb81404de}{Real\+Time\+::time\+Count\+\_\+t}} period)
+\begin{DoxyCompactList}\small\item\em Set the task activation period. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_robot_task_ac6e50f8e14ba5f12d75c18c3191a9754}{Set\+K\+W\+I\+PP}} (size\+\_\+t kwipp)
+\begin{DoxyCompactList}\small\item\em Set the task workload. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{class_robot_task_ac9a4a6b8f48965f9bb8fd7015024bf5c}{Publishing\+Request}} (size\+\_\+t topic, size\+\_\+t msg\+Size)
+\begin{DoxyCompactList}\small\item\em Request to be a publisher in a specific topic using the publisher/subscriber mechanism. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{class_robot_task_ad09726c867cbbd57a41b9c3435a21a8d}{Subscribing\+Request}} (size\+\_\+t topic, size\+\_\+t msg\+Size)
+\begin{DoxyCompactList}\small\item\em Request to be a subscriber in a specific topic using the publisher/subscriber mechanism. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{class_robot_task_a1c4012268a0d7321bf67085475ca0cbe}{Leave\+Pub\+Topic}} (void)
+\begin{DoxyCompactList}\small\item\em Leave a previous topic as publisher. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{class_robot_task_a14c04ba30f723674e84de00168364d8a}{Leave\+Sub\+Topic}} (void)
+\begin{DoxyCompactList}\small\item\em Leave a previous topic as subscriber. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_robot_task_ae7c4804e1e0c7fa7bc196973c3f73ca9}{Start}} (size\+\_\+t cpu\+Run)
+\begin{DoxyCompactList}\small\item\em Start to run the task as soon as is its turn. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_robot_task_a65c04a5d23d15d23d7fd71062ce566da}\label{class_robot_task_a65c04a5d23d15d23d7fd71062ce566da}} 
+void \mbox{\hyperlink{class_robot_task_a65c04a5d23d15d23d7fd71062ce566da}{Join}} (void)
+\begin{DoxyCompactList}\small\item\em A call to this method will block the caller until the synthetic task leaves its superlooop. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_robot_task_a7947d1094dbc81b0eaeaef486c327d25}\label{class_robot_task_a7947d1094dbc81b0eaeaef486c327d25}} 
+void \mbox{\hyperlink{class_robot_task_a7947d1094dbc81b0eaeaef486c327d25}{Unblock}} (void)
+\begin{DoxyCompactList}\small\item\em Unblock the synthetic task. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{class_robot_task_aa14083abeed623e4fbbcfc0214ba9f54}{Get\+ID}} (void)
+\begin{DoxyCompactList}\small\item\em Get the task identifier. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_robot_task_a452957a64dabb6aba822b5a1f50e4274}{Get\+Frequency}} (void)
+\begin{DoxyCompactList}\small\item\em Get the task activation frequency. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_real_time_ac9006c9ac8d67144a24c561eb81404de}{Real\+Time\+::time\+Count\+\_\+t}} \mbox{\hyperlink{class_robot_task_af247f13f913ddf5f77640e52c5a42691}{Get\+Period}} (void)
+\begin{DoxyCompactList}\small\item\em Get the task activation period in implementation specific units. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_robot_task_aa4c6627e60eeb07166ac6549104ddf46}{Get\+Period\+Sec}} (void)
+\begin{DoxyCompactList}\small\item\em Get the task activation period in seconds. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{class_robot_task_a28496cc9d19afeafbab6fb9456d5c7f2}{Get\+K\+W\+I\+PP}} (void)
+\begin{DoxyCompactList}\small\item\em Get the task workload in K\+W\+I\+PP. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_robot_task_af30805321fd4a027b457910d9e00e68f}{Get\+K\+W\+I\+PS}} (void)
+\begin{DoxyCompactList}\small\item\em Get the task utilization in K\+W\+I\+PS. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_robot_task_ad348cfb011846a5aa997f89088ad81b7}{Get\+Utilization}} (uint64\+\_\+t raw\+Speed)
+\begin{DoxyCompactList}\small\item\em Get the task utilization in percentage value. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{class_robot_task_ac934a5a2040778ed52fecac4daa2fa63}{Get\+Deadline\+Miss}} (void)
+\begin{DoxyCompactList}\small\item\em Get the task deadlines missed in a test step. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{class_robot_task_a25049444a1733457c46f28da4e93c83a}{Get\+Deadline\+Met}} (void)
+\begin{DoxyCompactList}\small\item\em Get the task deadlines met in a test step. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{class_robot_task_a38d9f27debc89c015ea31e7a835764ab}{Get\+Deadline\+Skip}} (void)
+\begin{DoxyCompactList}\small\item\em Get the task deadlines skipped in a test step. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_robot_task_aac3f7d56c10309db5c07e45469c28fc4}{Get\+Response\+Time}} (void)
+\begin{DoxyCompactList}\small\item\em Get the task average-\/case response time in seconds. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_robot_task_a562bfb7d0f9f61e799c60378c78a0f47}{Get\+Response\+Jitter}} (void)
+\begin{DoxyCompactList}\small\item\em Get the task average-\/case response jitter in seconds. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_robot_task_a89ba730917f8f52aa3f3cefcb1425784}{Get\+W\+C\+RT}} (void)
+\begin{DoxyCompactList}\small\item\em Get the task worst-\/case response time in seconds. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_robot_task_aad22681f0be1afbeed718623c3a0848d}{Get\+W\+C\+RJ}} (void)
+\begin{DoxyCompactList}\small\item\em Get the task worst-\/case response jitter in seconds. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_robot_task_af9af9762384fcfd47e1d7f3401c8b968}\label{class_robot_task_af9af9762384fcfd47e1d7f3401c8b968}} 
+void {\bfseries Clear\+W\+C\+RT} (void)
+\item 
+\mbox{\Hypertarget{class_robot_task_adcd8c5e0a5ee5934c6a7e95a761dfb3a}\label{class_robot_task_adcd8c5e0a5ee5934c6a7e95a761dfb3a}} 
+void {\bfseries Clear\+W\+C\+RJ} (void)
+\item 
+\mbox{\Hypertarget{class_robot_task_af0a1b02f9ca703a75c9dfb8e7f2a2080}\label{class_robot_task_af0a1b02f9ca703a75c9dfb8e7f2a2080}} 
+void \mbox{\hyperlink{class_robot_task_af0a1b02f9ca703a75c9dfb8e7f2a2080}{Wait\+Signal}} (void)
+\begin{DoxyCompactList}\small\item\em Blocks the synthetic task until a signal is sent from management task. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_robot_task_a084f5fd79e13effb36531fa736fecf7c}\label{class_robot_task_a084f5fd79e13effb36531fa736fecf7c}} 
+bool \mbox{\hyperlink{class_robot_task_a084f5fd79e13effb36531fa736fecf7c}{Is\+Task\+Stopped}} (void)
+\begin{DoxyCompactList}\small\item\em Verify if task must stop its execution to finish the test step. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{class_robot_task_a50ee56bd4b5339249169caefb7ec88c8}{Get\+Pub\+Message\+Size}} (void)
+\begin{DoxyCompactList}\small\item\em Get the size of the messages published by the synthetic task. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{class_robot_task_a0679c174adefefc9c229ea1c8981e7b9}{Get\+Sub\+Message\+Size}} (void)
+\begin{DoxyCompactList}\small\item\em Get the size of the messages received by the synthetic task. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{class_robot_task_a2b99de4f2083871bdc8456a3a3aef689}{Get\+Pub\+Topic}} (void)
+\begin{DoxyCompactList}\small\item\em Get the topic identification where task is publisher. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{class_robot_task_a20f9ab824d1a331069c6c63b5b97681c}{Get\+Sub\+Topic}} (void)
+\begin{DoxyCompactList}\small\item\em Get the topic identification where task is subscriber. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_robot_task_a0a99c16da4d181c1e23c32a999d4f7af}\label{class_robot_task_a0a99c16da4d181c1e23c32a999d4f7af}} 
+void \mbox{\hyperlink{class_robot_task_a0a99c16da4d181c1e23c32a999d4f7af}{Clear\+Measurements}} (void)
+\begin{DoxyCompactList}\small\item\em Clear all the measurements related to the task in the test step. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_robot_task_ab74898061eedf77fa03f1cb98b6254f7}\label{class_robot_task_ab74898061eedf77fa03f1cb98b6254f7}} 
+bool {\bfseries operator==} (const \mbox{\hyperlink{class_robot_task}{Robot\+Task}} \&task) const
+\item 
+\mbox{\Hypertarget{class_robot_task_aa738b20985573c5088985d4aa925108e}\label{class_robot_task_aa738b20985573c5088985d4aa925108e}} 
+bool {\bfseries operator==} (const size\+\_\+t id) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const size\+\_\+t \mbox{\hyperlink{class_robot_task_a125684e9acc2a7f45e3fe99efb7aa802}{max\+Message\+Size}} = 4194304
+\item 
+\mbox{\Hypertarget{class_robot_task_a7230458a89cccd3100c9ca9396d6862e}\label{class_robot_task_a7230458a89cccd3100c9ca9396d6862e}} 
+static const size\+\_\+t {\bfseries default\+Stack\+Size} = 500
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class encapsulates the synthetic tasks functionalities. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_robot_task_a25049444a1733457c46f28da4e93c83a}\label{class_robot_task_a25049444a1733457c46f28da4e93c83a}} 
+\index{RobotTask@{RobotTask}!GetDeadlineMet@{GetDeadlineMet}}
+\index{GetDeadlineMet@{GetDeadlineMet}!RobotTask@{RobotTask}}
+\doxysubsubsection{\texorpdfstring{GetDeadlineMet()}{GetDeadlineMet()}}
+{\footnotesize\ttfamily size\+\_\+t Robot\+Task\+::\+Get\+Deadline\+Met (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Get the task deadlines met in a test step. 
+
+\begin{DoxyReturn}{Returns}
+The number of deadlines met. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_robot_task_ac934a5a2040778ed52fecac4daa2fa63}\label{class_robot_task_ac934a5a2040778ed52fecac4daa2fa63}} 
+\index{RobotTask@{RobotTask}!GetDeadlineMiss@{GetDeadlineMiss}}
+\index{GetDeadlineMiss@{GetDeadlineMiss}!RobotTask@{RobotTask}}
+\doxysubsubsection{\texorpdfstring{GetDeadlineMiss()}{GetDeadlineMiss()}}
+{\footnotesize\ttfamily size\+\_\+t Robot\+Task\+::\+Get\+Deadline\+Miss (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Get the task deadlines missed in a test step. 
+
+\begin{DoxyReturn}{Returns}
+The number of deadlines missed. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_robot_task_a38d9f27debc89c015ea31e7a835764ab}\label{class_robot_task_a38d9f27debc89c015ea31e7a835764ab}} 
+\index{RobotTask@{RobotTask}!GetDeadlineSkip@{GetDeadlineSkip}}
+\index{GetDeadlineSkip@{GetDeadlineSkip}!RobotTask@{RobotTask}}
+\doxysubsubsection{\texorpdfstring{GetDeadlineSkip()}{GetDeadlineSkip()}}
+{\footnotesize\ttfamily size\+\_\+t Robot\+Task\+::\+Get\+Deadline\+Skip (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Get the task deadlines skipped in a test step. 
+
+\begin{DoxyReturn}{Returns}
+The number of deadlines skipped. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_robot_task_a452957a64dabb6aba822b5a1f50e4274}\label{class_robot_task_a452957a64dabb6aba822b5a1f50e4274}} 
+\index{RobotTask@{RobotTask}!GetFrequency@{GetFrequency}}
+\index{GetFrequency@{GetFrequency}!RobotTask@{RobotTask}}
+\doxysubsubsection{\texorpdfstring{GetFrequency()}{GetFrequency()}}
+{\footnotesize\ttfamily double Robot\+Task\+::\+Get\+Frequency (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Get the task activation frequency. 
+
+\begin{DoxyReturn}{Returns}
+The task activation frequency in seconds. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_robot_task_aa14083abeed623e4fbbcfc0214ba9f54}\label{class_robot_task_aa14083abeed623e4fbbcfc0214ba9f54}} 
+\index{RobotTask@{RobotTask}!GetID@{GetID}}
+\index{GetID@{GetID}!RobotTask@{RobotTask}}
+\doxysubsubsection{\texorpdfstring{GetID()}{GetID()}}
+{\footnotesize\ttfamily size\+\_\+t Robot\+Task\+::\+Get\+ID (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Get the task identifier. 
+
+\begin{DoxyReturn}{Returns}
+The task identifier. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_robot_task_a28496cc9d19afeafbab6fb9456d5c7f2}\label{class_robot_task_a28496cc9d19afeafbab6fb9456d5c7f2}} 
+\index{RobotTask@{RobotTask}!GetKWIPP@{GetKWIPP}}
+\index{GetKWIPP@{GetKWIPP}!RobotTask@{RobotTask}}
+\doxysubsubsection{\texorpdfstring{GetKWIPP()}{GetKWIPP()}}
+{\footnotesize\ttfamily size\+\_\+t Robot\+Task\+::\+Get\+K\+W\+I\+PP (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Get the task workload in K\+W\+I\+PP. 
+
+\begin{DoxyReturn}{Returns}
+The task workload in K\+W\+I\+PP. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_robot_task_af30805321fd4a027b457910d9e00e68f}\label{class_robot_task_af30805321fd4a027b457910d9e00e68f}} 
+\index{RobotTask@{RobotTask}!GetKWIPS@{GetKWIPS}}
+\index{GetKWIPS@{GetKWIPS}!RobotTask@{RobotTask}}
+\doxysubsubsection{\texorpdfstring{GetKWIPS()}{GetKWIPS()}}
+{\footnotesize\ttfamily double Robot\+Task\+::\+Get\+K\+W\+I\+PS (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Get the task utilization in K\+W\+I\+PS. 
+
+\begin{DoxyReturn}{Returns}
+The task utilization in K\+W\+I\+PS. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_robot_task_af247f13f913ddf5f77640e52c5a42691}\label{class_robot_task_af247f13f913ddf5f77640e52c5a42691}} 
+\index{RobotTask@{RobotTask}!GetPeriod@{GetPeriod}}
+\index{GetPeriod@{GetPeriod}!RobotTask@{RobotTask}}
+\doxysubsubsection{\texorpdfstring{GetPeriod()}{GetPeriod()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_real_time_ac9006c9ac8d67144a24c561eb81404de}{Real\+Time\+::time\+Count\+\_\+t}} Robot\+Task\+::\+Get\+Period (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Get the task activation period in implementation specific units. 
+
+\begin{DoxyReturn}{Returns}
+The task activation period in implementation specific units. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_robot_task_aa4c6627e60eeb07166ac6549104ddf46}\label{class_robot_task_aa4c6627e60eeb07166ac6549104ddf46}} 
+\index{RobotTask@{RobotTask}!GetPeriodSec@{GetPeriodSec}}
+\index{GetPeriodSec@{GetPeriodSec}!RobotTask@{RobotTask}}
+\doxysubsubsection{\texorpdfstring{GetPeriodSec()}{GetPeriodSec()}}
+{\footnotesize\ttfamily double Robot\+Task\+::\+Get\+Period\+Sec (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Get the task activation period in seconds. 
+
+\begin{DoxyReturn}{Returns}
+The task activation period in seconds. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_robot_task_a50ee56bd4b5339249169caefb7ec88c8}\label{class_robot_task_a50ee56bd4b5339249169caefb7ec88c8}} 
+\index{RobotTask@{RobotTask}!GetPubMessageSize@{GetPubMessageSize}}
+\index{GetPubMessageSize@{GetPubMessageSize}!RobotTask@{RobotTask}}
+\doxysubsubsection{\texorpdfstring{GetPubMessageSize()}{GetPubMessageSize()}}
+{\footnotesize\ttfamily uint32\+\_\+t Robot\+Task\+::\+Get\+Pub\+Message\+Size (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Get the size of the messages published by the synthetic task. 
+
+\begin{DoxyReturn}{Returns}
+The message size in bytes. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_robot_task_a2b99de4f2083871bdc8456a3a3aef689}\label{class_robot_task_a2b99de4f2083871bdc8456a3a3aef689}} 
+\index{RobotTask@{RobotTask}!GetPubTopic@{GetPubTopic}}
+\index{GetPubTopic@{GetPubTopic}!RobotTask@{RobotTask}}
+\doxysubsubsection{\texorpdfstring{GetPubTopic()}{GetPubTopic()}}
+{\footnotesize\ttfamily size\+\_\+t Robot\+Task\+::\+Get\+Pub\+Topic (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Get the topic identification where task is publisher. 
+
+\begin{DoxyReturn}{Returns}
+The topic id. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_robot_task_a562bfb7d0f9f61e799c60378c78a0f47}\label{class_robot_task_a562bfb7d0f9f61e799c60378c78a0f47}} 
+\index{RobotTask@{RobotTask}!GetResponseJitter@{GetResponseJitter}}
+\index{GetResponseJitter@{GetResponseJitter}!RobotTask@{RobotTask}}
+\doxysubsubsection{\texorpdfstring{GetResponseJitter()}{GetResponseJitter()}}
+{\footnotesize\ttfamily double Robot\+Task\+::\+Get\+Response\+Jitter (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Get the task average-\/case response jitter in seconds. 
+
+\begin{DoxyReturn}{Returns}
+The task average-\/case response jitter in seconds. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_robot_task_aac3f7d56c10309db5c07e45469c28fc4}\label{class_robot_task_aac3f7d56c10309db5c07e45469c28fc4}} 
+\index{RobotTask@{RobotTask}!GetResponseTime@{GetResponseTime}}
+\index{GetResponseTime@{GetResponseTime}!RobotTask@{RobotTask}}
+\doxysubsubsection{\texorpdfstring{GetResponseTime()}{GetResponseTime()}}
+{\footnotesize\ttfamily double Robot\+Task\+::\+Get\+Response\+Time (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Get the task average-\/case response time in seconds. 
+
+\begin{DoxyReturn}{Returns}
+The task average-\/case response time in seconds. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_robot_task_a0679c174adefefc9c229ea1c8981e7b9}\label{class_robot_task_a0679c174adefefc9c229ea1c8981e7b9}} 
+\index{RobotTask@{RobotTask}!GetSubMessageSize@{GetSubMessageSize}}
+\index{GetSubMessageSize@{GetSubMessageSize}!RobotTask@{RobotTask}}
+\doxysubsubsection{\texorpdfstring{GetSubMessageSize()}{GetSubMessageSize()}}
+{\footnotesize\ttfamily uint32\+\_\+t Robot\+Task\+::\+Get\+Sub\+Message\+Size (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Get the size of the messages received by the synthetic task. 
+
+\begin{DoxyReturn}{Returns}
+The message size in bytes. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_robot_task_a20f9ab824d1a331069c6c63b5b97681c}\label{class_robot_task_a20f9ab824d1a331069c6c63b5b97681c}} 
+\index{RobotTask@{RobotTask}!GetSubTopic@{GetSubTopic}}
+\index{GetSubTopic@{GetSubTopic}!RobotTask@{RobotTask}}
+\doxysubsubsection{\texorpdfstring{GetSubTopic()}{GetSubTopic()}}
+{\footnotesize\ttfamily size\+\_\+t Robot\+Task\+::\+Get\+Sub\+Topic (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Get the topic identification where task is subscriber. 
+
+\begin{DoxyReturn}{Returns}
+The topic id. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_robot_task_ad348cfb011846a5aa997f89088ad81b7}\label{class_robot_task_ad348cfb011846a5aa997f89088ad81b7}} 
+\index{RobotTask@{RobotTask}!GetUtilization@{GetUtilization}}
+\index{GetUtilization@{GetUtilization}!RobotTask@{RobotTask}}
+\doxysubsubsection{\texorpdfstring{GetUtilization()}{GetUtilization()}}
+{\footnotesize\ttfamily double Robot\+Task\+::\+Get\+Utilization (\begin{DoxyParamCaption}\item[{uint64\+\_\+t}]{raw\+Speed }\end{DoxyParamCaption})}
+
+
+
+Get the task utilization in percentage value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em raw\+Speed} & -\/ The processor speed in K\+W\+I\+PS.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The task utilization in percentage value. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_robot_task_aad22681f0be1afbeed718623c3a0848d}\label{class_robot_task_aad22681f0be1afbeed718623c3a0848d}} 
+\index{RobotTask@{RobotTask}!GetWCRJ@{GetWCRJ}}
+\index{GetWCRJ@{GetWCRJ}!RobotTask@{RobotTask}}
+\doxysubsubsection{\texorpdfstring{GetWCRJ()}{GetWCRJ()}}
+{\footnotesize\ttfamily double Robot\+Task\+::\+Get\+W\+C\+RJ (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Get the task worst-\/case response jitter in seconds. 
+
+\begin{DoxyReturn}{Returns}
+The task worst-\/case response jitter in seconds. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_robot_task_a89ba730917f8f52aa3f3cefcb1425784}\label{class_robot_task_a89ba730917f8f52aa3f3cefcb1425784}} 
+\index{RobotTask@{RobotTask}!GetWCRT@{GetWCRT}}
+\index{GetWCRT@{GetWCRT}!RobotTask@{RobotTask}}
+\doxysubsubsection{\texorpdfstring{GetWCRT()}{GetWCRT()}}
+{\footnotesize\ttfamily double Robot\+Task\+::\+Get\+W\+C\+RT (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Get the task worst-\/case response time in seconds. 
+
+\begin{DoxyReturn}{Returns}
+The task worst-\/case response time in seconds. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_robot_task_a1c4012268a0d7321bf67085475ca0cbe}\label{class_robot_task_a1c4012268a0d7321bf67085475ca0cbe}} 
+\index{RobotTask@{RobotTask}!LeavePubTopic@{LeavePubTopic}}
+\index{LeavePubTopic@{LeavePubTopic}!RobotTask@{RobotTask}}
+\doxysubsubsection{\texorpdfstring{LeavePubTopic()}{LeavePubTopic()}}
+{\footnotesize\ttfamily size\+\_\+t Robot\+Task\+::\+Leave\+Pub\+Topic (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Leave a previous topic as publisher. 
+
+\begin{DoxyReturn}{Returns}
+1 if was successfully requested and 0 otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_robot_task_a14c04ba30f723674e84de00168364d8a}\label{class_robot_task_a14c04ba30f723674e84de00168364d8a}} 
+\index{RobotTask@{RobotTask}!LeaveSubTopic@{LeaveSubTopic}}
+\index{LeaveSubTopic@{LeaveSubTopic}!RobotTask@{RobotTask}}
+\doxysubsubsection{\texorpdfstring{LeaveSubTopic()}{LeaveSubTopic()}}
+{\footnotesize\ttfamily size\+\_\+t Robot\+Task\+::\+Leave\+Sub\+Topic (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Leave a previous topic as subscriber. 
+
+\begin{DoxyReturn}{Returns}
+1 if was successfully requested and 0 otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_robot_task_ac9a4a6b8f48965f9bb8fd7015024bf5c}\label{class_robot_task_ac9a4a6b8f48965f9bb8fd7015024bf5c}} 
+\index{RobotTask@{RobotTask}!PublishingRequest@{PublishingRequest}}
+\index{PublishingRequest@{PublishingRequest}!RobotTask@{RobotTask}}
+\doxysubsubsection{\texorpdfstring{PublishingRequest()}{PublishingRequest()}}
+{\footnotesize\ttfamily size\+\_\+t Robot\+Task\+::\+Publishing\+Request (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{topic,  }\item[{size\+\_\+t}]{msg\+Size }\end{DoxyParamCaption})}
+
+
+
+Request to be a publisher in a specific topic using the publisher/subscriber mechanism. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em topic} & -\/ topic identifier. \\
+\hline
+{\em msg\+Size} & -\/ the message size in bytes.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if was successfully requested and 0 otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_robot_task_a998edf7e061ccc7e91c6c5d247b30ca9}\label{class_robot_task_a998edf7e061ccc7e91c6c5d247b30ca9}} 
+\index{RobotTask@{RobotTask}!SetFrequency@{SetFrequency}}
+\index{SetFrequency@{SetFrequency}!RobotTask@{RobotTask}}
+\doxysubsubsection{\texorpdfstring{SetFrequency()}{SetFrequency()}}
+{\footnotesize\ttfamily void Robot\+Task\+::\+Set\+Frequency (\begin{DoxyParamCaption}\item[{double}]{frequency }\end{DoxyParamCaption})}
+
+
+
+Set the task activation frequency. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em frequency} & -\/ The activation frequency in seconds. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_robot_task_ac6e50f8e14ba5f12d75c18c3191a9754}\label{class_robot_task_ac6e50f8e14ba5f12d75c18c3191a9754}} 
+\index{RobotTask@{RobotTask}!SetKWIPP@{SetKWIPP}}
+\index{SetKWIPP@{SetKWIPP}!RobotTask@{RobotTask}}
+\doxysubsubsection{\texorpdfstring{SetKWIPP()}{SetKWIPP()}}
+{\footnotesize\ttfamily void Robot\+Task\+::\+Set\+K\+W\+I\+PP (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{kwipp }\end{DoxyParamCaption})}
+
+
+
+Set the task workload. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em kwipp} & -\/ The task workload in K\+W\+I\+PP. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_robot_task_a974ac732a330f3c09035074beb7e2815}\label{class_robot_task_a974ac732a330f3c09035074beb7e2815}} 
+\index{RobotTask@{RobotTask}!SetPeriod@{SetPeriod}}
+\index{SetPeriod@{SetPeriod}!RobotTask@{RobotTask}}
+\doxysubsubsection{\texorpdfstring{SetPeriod()}{SetPeriod()}}
+{\footnotesize\ttfamily void Robot\+Task\+::\+Set\+Period (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_real_time_ac9006c9ac8d67144a24c561eb81404de}{Real\+Time\+::time\+Count\+\_\+t}}}]{period }\end{DoxyParamCaption})}
+
+
+
+Set the task activation period. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em period} & -\/ The activation period in implementation specific unit. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_robot_task_ae7c4804e1e0c7fa7bc196973c3f73ca9}\label{class_robot_task_ae7c4804e1e0c7fa7bc196973c3f73ca9}} 
+\index{RobotTask@{RobotTask}!Start@{Start}}
+\index{Start@{Start}!RobotTask@{RobotTask}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void Robot\+Task\+::\+Start (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{cpu\+Run }\end{DoxyParamCaption})}
+
+
+
+Start to run the task as soon as is its turn. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cpu\+Run} & -\/ cpu number to run. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_robot_task_ad09726c867cbbd57a41b9c3435a21a8d}\label{class_robot_task_ad09726c867cbbd57a41b9c3435a21a8d}} 
+\index{RobotTask@{RobotTask}!SubscribingRequest@{SubscribingRequest}}
+\index{SubscribingRequest@{SubscribingRequest}!RobotTask@{RobotTask}}
+\doxysubsubsection{\texorpdfstring{SubscribingRequest()}{SubscribingRequest()}}
+{\footnotesize\ttfamily size\+\_\+t Robot\+Task\+::\+Subscribing\+Request (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{topic,  }\item[{size\+\_\+t}]{msg\+Size }\end{DoxyParamCaption})}
+
+
+
+Request to be a subscriber in a specific topic using the publisher/subscriber mechanism. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em topic} & -\/ topic identifier. \\
+\hline
+{\em msg\+Size} & -\/ the message size in bytes.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if was successfully requested and 0 otherwise. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_robot_task_a125684e9acc2a7f45e3fe99efb7aa802}\label{class_robot_task_a125684e9acc2a7f45e3fe99efb7aa802}} 
+\index{RobotTask@{RobotTask}!maxMessageSize@{maxMessageSize}}
+\index{maxMessageSize@{maxMessageSize}!RobotTask@{RobotTask}}
+\doxysubsubsection{\texorpdfstring{maxMessageSize}{maxMessageSize}}
+{\footnotesize\ttfamily const size\+\_\+t Robot\+Task\+::max\+Message\+Size = 4194304\hspace{0.3cm}{\ttfamily [static]}}
+
+The maximum messages size. Each synthetic task will always occupy this memory 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_robot_task_8hpp}{Robot\+Task.\+hpp}}\item 
+\mbox{\hyperlink{_robot_task_8cpp}{Robot\+Task.\+cpp}}\end{DoxyCompactItemize}

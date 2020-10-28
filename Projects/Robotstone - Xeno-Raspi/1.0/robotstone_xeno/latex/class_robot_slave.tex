@@ -1,0 +1,229 @@
+\hypertarget{class_robot_slave}{}\doxysection{Robot\+Slave Class Reference}
+\label{class_robot_slave}\index{RobotSlave@{RobotSlave}}
+Inheritance diagram for Robot\+Slave\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_robot_slave}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_robot_slave_a7b804725ebcd4d30302fdbf68837d39d}\label{class_robot_slave_a7b804725ebcd4d30302fdbf68837d39d}} 
+\mbox{\hyperlink{class_robot_slave_a7b804725ebcd4d30302fdbf68837d39d}{Robot\+Slave}} (void)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_robot_slave}{Robot\+Slave}} class constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_robot_slave_a6a6ff72b693ea1d7377a60197875d622}\label{class_robot_slave_a6a6ff72b693ea1d7377a60197875d622}} 
+void \mbox{\hyperlink{class_robot_slave_a6a6ff72b693ea1d7377a60197875d622}{Start}} (void)
+\begin{DoxyCompactList}\small\item\em Starts the operation of the \mbox{\hyperlink{class_robotstone}{Robotstone}} benchmark in the Slave. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_robot_slave_a93aa1bd75bafd1b5b5db1f697a99ed5e}\label{class_robot_slave_a93aa1bd75bafd1b5b5db1f697a99ed5e}} 
+void \mbox{\hyperlink{class_robot_slave_a93aa1bd75bafd1b5b5db1f697a99ed5e}{Start\+Tasks}} (void)
+\begin{DoxyCompactList}\small\item\em Starts the experiment synthetic tasks. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_robot_slave_a6c730abc855d66f45b37da456a266410}\label{class_robot_slave_a6c730abc855d66f45b37da456a266410}} 
+void \mbox{\hyperlink{class_robot_slave_a6c730abc855d66f45b37da456a266410}{Start\+Experiment}} (void)
+\begin{DoxyCompactList}\small\item\em After experiment initialization, this function will be the management task superloop, that will start the synthetic tasks, get their experiment results and re-\/run then case necessary or finish the experiment in Slave node. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_robot_slave_ab2c46b1dec6da24f5cd608248c91a25d}\label{class_robot_slave_ab2c46b1dec6da24f5cd608248c91a25d}} 
+void \mbox{\hyperlink{class_robot_slave_ab2c46b1dec6da24f5cd608248c91a25d}{Init\+Experiment}} (void)
+\begin{DoxyCompactList}\small\item\em Initialize the experiment parameters in Slave node. The Master node must be initialized beforehand. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_robot_slave_a2e99ed343f621cd40e1e6e6aad73777d}\label{class_robot_slave_a2e99ed343f621cd40e1e6e6aad73777d}} 
+void \mbox{\hyperlink{class_robot_slave_a2e99ed343f621cd40e1e6e6aad73777d}{Man\+Task}} (void)
+\begin{DoxyCompactList}\small\item\em This method is called by the management task function to operate inside the \mbox{\hyperlink{class_robot_slave}{Robot\+Slave}} instance. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{class_robot_slave_a7349744da107d42447f0058003917641}{Experiment\+Deadline\+Miss}} (void)
+\begin{DoxyCompactList}\small\item\em Get the number of deadlines missed in the experiment. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_robot_slave_a223959c19af435f44b4dbb9292211a34}{Update\+Experiment}} (size\+\_\+t test)
+\begin{DoxyCompactList}\small\item\em Update the actual experiment step test. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_robot_slave_a5f0b639677d54fd84d00451abdc12796}{Update\+Exp4}} (size\+\_\+t test)
+\begin{DoxyCompactList}\small\item\em Update the actual Experiment 4 step test. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_robot_slave_a5a9cff1bf17452f92f3d8174fba3f8b5}{Update\+Exp5}} (size\+\_\+t test)
+\begin{DoxyCompactList}\small\item\em Update the actual Experiment 5 step test. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_robot_slave_a032520d165cb05ef53aee88dd9f6576f}{Update\+Exp6}} (size\+\_\+t test)
+\begin{DoxyCompactList}\small\item\em Update the actual Experiment 6 step test. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_robot_slave_a3a5d58e0e3a457cdc69151f33704eac6}{Update\+Exp7}} (size\+\_\+t test)
+\begin{DoxyCompactList}\small\item\em Update the actual Experiment 7 step test. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_robot_slave_a71b7df4573ba55077a17725efee5ef66}\label{class_robot_slave_a71b7df4573ba55077a17725efee5ef66}} 
+void \mbox{\hyperlink{class_robot_slave_a71b7df4573ba55077a17725efee5ef66}{Calculate\+Deadline\+Miss}} (void)
+\begin{DoxyCompactList}\small\item\em Calculates the deadlines missed number and saves in internal \mbox{\hyperlink{class_robot_slave}{Robot\+Slave}} attributes. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_robot_slave_ad1f640f1a38919dbfb1f10fbe16a320c}{Start\+Report}} (size\+\_\+t test)
+\begin{DoxyCompactList}\small\item\em Starts the report of the test step results. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_robot_slave_a227799aa35919f29e35467d29cc388b3}\label{class_robot_slave_a227799aa35919f29e35467d29cc388b3}} 
+void \mbox{\hyperlink{class_robot_slave_a227799aa35919f29e35467d29cc388b3}{Wait\+Tasks\+Finish}} (void)
+\begin{DoxyCompactList}\small\item\em Wait synthetic tasks to finish, i.\+e., go out its superloops. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_robot_slave_a088f6356fbe21f8332b248f4b95e8a49}{Is\+Finished\+By\+Master}} (void)
+\begin{DoxyCompactList}\small\item\em Verify if experiment was finished my the Master node. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_robot_slave_a56a53d738bd8b0148245cd83cde48ba7}\label{class_robot_slave_a56a53d738bd8b0148245cd83cde48ba7}} 
+void \mbox{\hyperlink{class_robot_slave_a56a53d738bd8b0148245cd83cde48ba7}{Set\+Experiment\+Baseline}} ()
+\begin{DoxyCompactList}\small\item\em Set all the parameters and configurations to initialize the baseline tasks. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_robot_slave_ad89c9a45517cb9c1a94c27cf1f2b0075}\label{class_robot_slave_ad89c9a45517cb9c1a94c27cf1f2b0075}} 
+void \mbox{\hyperlink{class_robot_slave_ad89c9a45517cb9c1a94c27cf1f2b0075}{Signal\+Deadline\+To\+Master}} ()
+\begin{DoxyCompactList}\small\item\em Signal to Master the number of deadlines missed in Slave. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_robot_slave_afb89bd602b57cc95db70439388a498a3}\label{class_robot_slave_afb89bd602b57cc95db70439388a498a3}} 
+void {\bfseries Init\+Test} (uint8\+\_\+t exp, uint8\+\_\+t test)
+\item 
+void \mbox{\hyperlink{class_robot_slave_af49222d95cffb0f51e250ecca86fdd2a}{Print\+Report}} (size\+\_\+t test)
+\begin{DoxyCompactList}\small\item\em Prints the report of the test step results. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_robot_slave_af46efa2ff828223a1cfd9801242e59a3}\label{class_robot_slave_af46efa2ff828223a1cfd9801242e59a3}} 
+uint32\+\_\+t {\bfseries Total\+Deadline\+Miss} (void)
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_robot_slave_ae972492e754a64df67a265c85e9874b6}{Manage\+Slave\+Task}} (void $\ast$args)
+\begin{DoxyCompactList}\small\item\em The entry function of the management task in Slave node. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_robot_slave_a7349744da107d42447f0058003917641}\label{class_robot_slave_a7349744da107d42447f0058003917641}} 
+\index{RobotSlave@{RobotSlave}!ExperimentDeadlineMiss@{ExperimentDeadlineMiss}}
+\index{ExperimentDeadlineMiss@{ExperimentDeadlineMiss}!RobotSlave@{RobotSlave}}
+\doxysubsubsection{\texorpdfstring{ExperimentDeadlineMiss()}{ExperimentDeadlineMiss()}}
+{\footnotesize\ttfamily size\+\_\+t Robot\+Slave\+::\+Experiment\+Deadline\+Miss (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Get the number of deadlines missed in the experiment. 
+
+\begin{DoxyReturn}{Returns}
+deadlines number. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_robot_slave_a088f6356fbe21f8332b248f4b95e8a49}\label{class_robot_slave_a088f6356fbe21f8332b248f4b95e8a49}} 
+\index{RobotSlave@{RobotSlave}!IsFinishedByMaster@{IsFinishedByMaster}}
+\index{IsFinishedByMaster@{IsFinishedByMaster}!RobotSlave@{RobotSlave}}
+\doxysubsubsection{\texorpdfstring{IsFinishedByMaster()}{IsFinishedByMaster()}}
+{\footnotesize\ttfamily bool Robot\+Slave\+::\+Is\+Finished\+By\+Master (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Verify if experiment was finished my the Master node. 
+
+\begin{DoxyReturn}{Returns}
+true -\/ if experiment was finished; false -\/ otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_robot_slave_af49222d95cffb0f51e250ecca86fdd2a}\label{class_robot_slave_af49222d95cffb0f51e250ecca86fdd2a}} 
+\index{RobotSlave@{RobotSlave}!PrintReport@{PrintReport}}
+\index{PrintReport@{PrintReport}!RobotSlave@{RobotSlave}}
+\doxysubsubsection{\texorpdfstring{PrintReport()}{PrintReport()}}
+{\footnotesize\ttfamily void Robot\+Slave\+::\+Print\+Report (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{test }\end{DoxyParamCaption})}
+
+
+
+Prints the report of the test step results. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em test} & -\/ test step number. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_robot_slave_ad1f640f1a38919dbfb1f10fbe16a320c}\label{class_robot_slave_ad1f640f1a38919dbfb1f10fbe16a320c}} 
+\index{RobotSlave@{RobotSlave}!StartReport@{StartReport}}
+\index{StartReport@{StartReport}!RobotSlave@{RobotSlave}}
+\doxysubsubsection{\texorpdfstring{StartReport()}{StartReport()}}
+{\footnotesize\ttfamily void Robot\+Slave\+::\+Start\+Report (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{test }\end{DoxyParamCaption})}
+
+
+
+Starts the report of the test step results. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em test} & -\/ test step number. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_robot_slave_a5f0b639677d54fd84d00451abdc12796}\label{class_robot_slave_a5f0b639677d54fd84d00451abdc12796}} 
+\index{RobotSlave@{RobotSlave}!UpdateExp4@{UpdateExp4}}
+\index{UpdateExp4@{UpdateExp4}!RobotSlave@{RobotSlave}}
+\doxysubsubsection{\texorpdfstring{UpdateExp4()}{UpdateExp4()}}
+{\footnotesize\ttfamily void Robot\+Slave\+::\+Update\+Exp4 (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{test }\end{DoxyParamCaption})}
+
+
+
+Update the actual Experiment 4 step test. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em test} & -\/ test step number. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_robot_slave_a5a9cff1bf17452f92f3d8174fba3f8b5}\label{class_robot_slave_a5a9cff1bf17452f92f3d8174fba3f8b5}} 
+\index{RobotSlave@{RobotSlave}!UpdateExp5@{UpdateExp5}}
+\index{UpdateExp5@{UpdateExp5}!RobotSlave@{RobotSlave}}
+\doxysubsubsection{\texorpdfstring{UpdateExp5()}{UpdateExp5()}}
+{\footnotesize\ttfamily void Robot\+Slave\+::\+Update\+Exp5 (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{test }\end{DoxyParamCaption})}
+
+
+
+Update the actual Experiment 5 step test. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em test} & -\/ test step number. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_robot_slave_a032520d165cb05ef53aee88dd9f6576f}\label{class_robot_slave_a032520d165cb05ef53aee88dd9f6576f}} 
+\index{RobotSlave@{RobotSlave}!UpdateExp6@{UpdateExp6}}
+\index{UpdateExp6@{UpdateExp6}!RobotSlave@{RobotSlave}}
+\doxysubsubsection{\texorpdfstring{UpdateExp6()}{UpdateExp6()}}
+{\footnotesize\ttfamily void Robot\+Slave\+::\+Update\+Exp6 (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{test }\end{DoxyParamCaption})}
+
+
+
+Update the actual Experiment 6 step test. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em test} & -\/ test step number. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_robot_slave_a3a5d58e0e3a457cdc69151f33704eac6}\label{class_robot_slave_a3a5d58e0e3a457cdc69151f33704eac6}} 
+\index{RobotSlave@{RobotSlave}!UpdateExp7@{UpdateExp7}}
+\index{UpdateExp7@{UpdateExp7}!RobotSlave@{RobotSlave}}
+\doxysubsubsection{\texorpdfstring{UpdateExp7()}{UpdateExp7()}}
+{\footnotesize\ttfamily void Robot\+Slave\+::\+Update\+Exp7 (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{test }\end{DoxyParamCaption})}
+
+
+
+Update the actual Experiment 7 step test. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em test} & -\/ test step number. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_robot_slave_a223959c19af435f44b4dbb9292211a34}\label{class_robot_slave_a223959c19af435f44b4dbb9292211a34}} 
+\index{RobotSlave@{RobotSlave}!UpdateExperiment@{UpdateExperiment}}
+\index{UpdateExperiment@{UpdateExperiment}!RobotSlave@{RobotSlave}}
+\doxysubsubsection{\texorpdfstring{UpdateExperiment()}{UpdateExperiment()}}
+{\footnotesize\ttfamily void Robot\+Slave\+::\+Update\+Experiment (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{test }\end{DoxyParamCaption})}
+
+
+
+Update the actual experiment step test. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em test} & -\/ test step number. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_robot_slave_ae972492e754a64df67a265c85e9874b6}\label{class_robot_slave_ae972492e754a64df67a265c85e9874b6}} 
+\index{RobotSlave@{RobotSlave}!ManageSlaveTask@{ManageSlaveTask}}
+\index{ManageSlaveTask@{ManageSlaveTask}!RobotSlave@{RobotSlave}}
+\doxysubsubsection{\texorpdfstring{ManageSlaveTask}{ManageSlaveTask}}
+{\footnotesize\ttfamily void Manage\+Slave\+Task (\begin{DoxyParamCaption}\item[{void $\ast$}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+The entry function of the management task in Slave node. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em args} & -\/ Arguments pointer passed to the management task. This will be the pointer of the \mbox{\hyperlink{class_robot_slave}{Robot\+Slave}} object. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_robot_slave_8hpp}{Robot\+Slave.\+hpp}}\item 
+\mbox{\hyperlink{_robot_slave_8cpp}{Robot\+Slave.\+cpp}}\end{DoxyCompactItemize}

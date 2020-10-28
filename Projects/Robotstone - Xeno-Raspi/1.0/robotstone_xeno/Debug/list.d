@@ -1,0 +1,1 @@
+list.d: ../list.cpp

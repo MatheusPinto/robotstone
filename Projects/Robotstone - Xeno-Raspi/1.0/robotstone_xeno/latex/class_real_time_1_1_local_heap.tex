@@ -1,0 +1,84 @@
+\hypertarget{class_real_time_1_1_local_heap}{}\doxysection{Real\+Time\+::Local\+Heap Class Reference}
+\label{class_real_time_1_1_local_heap}\index{RealTime::LocalHeap@{RealTime::LocalHeap}}
+
+
+Class used to share dynamic allocated memory between tasks using a common string identifier.  
+
+
+
+
+{\ttfamily \#include $<$rtheap.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_real_time_1_1_local_heap_a52e6c3941cfd83738990d9258ffd107d}{Local\+Heap}} (const char $\ast$name, size\+\_\+t heap\+Size)
+\begin{DoxyCompactList}\small\item\em The \mbox{\hyperlink{class_real_time_1_1_local_heap}{Local\+Heap}} class constructor. \end{DoxyCompactList}\item 
+void $\ast$ \mbox{\hyperlink{class_real_time_1_1_local_heap_a1bfc78d9b3cf51bfb4304d54d83b92e4}{Alloc}} (void)
+\begin{DoxyCompactList}\small\item\em Allocates the memory region inquired. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_real_time_1_1_local_heap_a983ea69c8dcfd3f29ad60da185a4de17}{Free}} (void $\ast$block)
+\begin{DoxyCompactList}\small\item\em Free the memory region previously allocated. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class used to share dynamic allocated memory between tasks using a common string identifier. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_real_time_1_1_local_heap_a52e6c3941cfd83738990d9258ffd107d}\label{class_real_time_1_1_local_heap_a52e6c3941cfd83738990d9258ffd107d}} 
+\index{RealTime::LocalHeap@{RealTime::LocalHeap}!LocalHeap@{LocalHeap}}
+\index{LocalHeap@{LocalHeap}!RealTime::LocalHeap@{RealTime::LocalHeap}}
+\doxysubsubsection{\texorpdfstring{LocalHeap()}{LocalHeap()}}
+{\footnotesize\ttfamily Real\+Time\+::\+Local\+Heap\+::\+Local\+Heap (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name,  }\item[{size\+\_\+t}]{heap\+Size }\end{DoxyParamCaption})}
+
+
+
+The \mbox{\hyperlink{class_real_time_1_1_local_heap}{Local\+Heap}} class constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & -\/ A null terminated string to identify allocated memory for sharing. \\
+\hline
+{\em heap\+Size} & -\/ The memory size inquire for allocation in bytes. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_real_time_1_1_local_heap_a1bfc78d9b3cf51bfb4304d54d83b92e4}\label{class_real_time_1_1_local_heap_a1bfc78d9b3cf51bfb4304d54d83b92e4}} 
+\index{RealTime::LocalHeap@{RealTime::LocalHeap}!Alloc@{Alloc}}
+\index{Alloc@{Alloc}!RealTime::LocalHeap@{RealTime::LocalHeap}}
+\doxysubsubsection{\texorpdfstring{Alloc()}{Alloc()}}
+{\footnotesize\ttfamily void $\ast$ Real\+Time\+::\+Local\+Heap\+::\+Alloc (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Allocates the memory region inquired. 
+
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item A pointer to the allocated block memory if success;
+\item N\+U\+LL otherwise. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_real_time_1_1_local_heap_a983ea69c8dcfd3f29ad60da185a4de17}\label{class_real_time_1_1_local_heap_a983ea69c8dcfd3f29ad60da185a4de17}} 
+\index{RealTime::LocalHeap@{RealTime::LocalHeap}!Free@{Free}}
+\index{Free@{Free}!RealTime::LocalHeap@{RealTime::LocalHeap}}
+\doxysubsubsection{\texorpdfstring{Free()}{Free()}}
+{\footnotesize\ttfamily void Real\+Time\+::\+Local\+Heap\+::\+Free (\begin{DoxyParamCaption}\item[{void $\ast$}]{block }\end{DoxyParamCaption})}
+
+
+
+Free the memory region previously allocated. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em block} & -\/ The pointer of the previously allocated block memory. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{rtheap_8hpp}{rtheap.\+hpp}}\item 
+\mbox{\hyperlink{rtheap_8cpp}{rtheap.\+cpp}}\end{DoxyCompactItemize}
